@@ -170,13 +170,18 @@ var swiper3 = new Swiper('.swiper3', {
 
 
 // material stuff - must be at the end of the JS file!!!
-let bitbutton = new mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-ripple'));
 
 let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
 document.querySelector('.mdc-top-app-bar__navigation-icon').addEventListener('click', () => drawer.open = true);
 
+var btns = document.querySelectorAll('.myripple');
+for (var i = 0, btn; btn = btns[i]; i++) {
+mdc.ripple.MDCRipple.attachTo(btn);
+}
 
+var toggleButton = new mdc.iconButton.MDCIconButtonToggle(document.getElementById('add-to-favorites'));
 
+var toggleButton2 = new mdc.iconButton.MDCIconButtonToggle(document.getElementById('add-to-favorites2'));
 
 //
 // var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#dynamic-tab-bar'));

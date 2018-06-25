@@ -3770,7 +3770,7 @@ input.mdl-button[type="submit"] {
   margin-right: 0;
   min-width: 32px;
   width: 32px;
-  padding: 0;
+  padding: 12px;
   overflow: hidden;
   color: inherit;
   line-height: normal; }

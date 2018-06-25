@@ -1,3 +1,7 @@
+%hover-transition-pixel {
+  transition: all 80ms ease-out;
+  -webkit-transition: all 80ms ease-out;
+}
 
 
 .dark-layer {
@@ -34,7 +38,7 @@
 
 .dark-soft-layer {
   @extend .dark-layer;
-  &:after { background: rgba(0,0,0,0.03); }
+  &:after { background: rgba(0,0,0,0.04); }
 }
 
 
@@ -42,8 +46,7 @@
 
 
 .hover-img-dark {
-  transition: all 100ms ease-out;
-  -webkit-transition: all 100ms ease-out;
+  @extend %hover-transition-pixel;
   &:hover {
     .dark-layer:after {
       opacity: 1;
@@ -51,26 +54,23 @@
   }
 }
 
-.hover-shadow-soft {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
+.hover-shadow-soft { //pixel shadow on hover
+  @extend %hover-transition-pixel;
   &:hover {
     box-shadow: 0 2px 11px 0 rgba(0,0,0,0.2) !important;
   }
 }
 
 .hover-shadow-hard {
-   -webkit-transition: all 100ms ease-out;
-   transition: all 100ms ease-out;
+   @extend %hover-transition-pixel;
    &:hover {
      box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12) !important;
    }
  }
 
 .hover-border {
+   @extend %hover-transition-pixel;
    border: $card_line_width solid $card_line_color;
-   -webkit-transition: all 100ms ease-out;
-   transition: all 100ms ease-out;
    &:hover {
      border: $card_line_width solid $color_main;
    }

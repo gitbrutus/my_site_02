@@ -12,7 +12,7 @@ $color_main:            #4285f4;
 $background_dark:       $text_main;
 $background_grey:       #F5F5F5; // adobe & material
 $hover_grey:            #F5F5F5;
-$background_grey_light: #FAFAFA;
+$background_grey_light: #FAFAFA; // google pixel - use for page background!!!
 $line_grey:             #e1e1e1; // adobe for $background_grey
 $line_grey_light:       #F4F4F6; // adobe for white background
 
@@ -20,6 +20,14 @@ $line_grey_light:       #F4F4F6; // adobe for white background
 .verylightbackground { background-color: $background_grey_light; }
 .darkbackground { background-color: $background_dark; }
 
+
+// grid ------------------------------------
+// >= 576 (sm)
+// >= 768 (md)
+// >= 992 (lg)
+// >= 1140 (xl)
+// >= 1280 (1340)
+// >= 1440 (1540)
 
 
 // Typography --------------------------------------
