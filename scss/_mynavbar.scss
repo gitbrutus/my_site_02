@@ -1,0 +1,116 @@
+
+.mdc-top-app-bar, .mdc-top-app-bar__row {
+  background-color: $navbar_color;
+  display: flex !important; // put the navbar in a container
+  top: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.nav-shadow { box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16); }
+.mdc-top-app-bar__navigation-icon { color: $navtext_color !important; }
+.nav-text-colorchange { color: $text_main !important; }
+
+.mdc-top-app-bar__title {
+  font-family: $header_font;
+  font-size: 20px;
+  font-weight: 300;
+  color: $navtext_color;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+// mobile toggle menu on scroll
+@media (max-width: 767px) {
+  .mdc-top-app-bar, .mdc-top-app-bar__row { height: 56px;}
+  .nav-shrink { background-color: white; }
+  .nav-up { top: -56px; }
+  .mdc-top-app-bar__section .nav-item { display: none; }
+}
+
+// desktop resize and color change navbar on scroll
+@media (min-width: 768px) {
+  .mdc-top-app-bar, .mdc-top-app-bar__row { height: 108px; }
+  .mdc-top-app-bar__navigation-icon { display: none; }
+  .nav-shrink {
+    background-color: white;
+    height: 56px;
+  }
+}
+
+
+// drawers
+.mdc-drawer__drawer {
+}
+
+
+// nav-links --------------------
+
+
+.nav-link {
+  font-size: 16px;
+  height: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $text_main;
+  &:hover::after {
+    margin-top: $nav_hover_line_distance !important;
+    height: $nav_hover_line_width !important;
+  }
+}
+
+.nav-link.active::after {
+  position: absolute;
+  background: $hover_line_color;
+  content: "";
+  display: block;
+  height: $nav_hover_line_width !important;
+  margin-top: $nav_hover_line_distance !important;
+  left: 0;
+  transition: all .5s cubic-bezier(.165,.84,.44,1);
+  width: 100%;
+  opacity: 1;
+}
+
+.mdc-top-app-bar__section .nav-link {
+  display: inline;
+  font-family: $main_font;
+  font-size: $navtext_size;
+  font-weight: $navtext_weight;
+  height: 48px;
+  color: $navtext_color;
+  text-transform: $navtext_case;
+  margin-left: $navtext_margin_left;
+  padding: 15px !important;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  &:last-of-type {
+    margin-right: 10px;
+  }
+  // &.active::after {
+  //   height: $hover_line_width;
+  //   margin-top: $hover_line_distance;
+  // }
+}
+
+
+
+
+// left tabs ---------------------------------
+.left-tabs .nav-link {
+  font-size: 16px;
+  font-weight: 300;
+  /*text-transform: uppercase;*/
+  border-left: 5px solid white;
+  padding: 15px 25px;
+}
+
+.left-tabs .nav-link:hover {
+  border-left: 5px solid #4285f4;
+}
+
+.left-tabs .nav-link.active {
+  border-left: 5px solid #4285f4;
+  color: #4285f4 !important;
+  font-weight: 400 !important;
+}

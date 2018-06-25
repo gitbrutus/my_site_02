@@ -1,0 +1,92 @@
+
+$text_main:             #212121; // #414141;
+$text_p:                #202124; //#202124 cloud next;
+                                 //#424242 google design;
+
+$text_color:            #4285f4;
+
+$hover_line_color:      #4285f4;
+// $hover_background_color:
+$color_main:            #4285f4;
+
+$background_dark:       $text_main;
+$background_grey:       #F5F5F5; // adobe & material
+$hover_grey:            #F5F5F5;
+$background_grey_light: #FAFAFA;
+$line_grey:             #e1e1e1; // adobe for $background_grey
+$line_grey_light:       #F4F4F6; // adobe for white background
+
+.lightbackground { background-color: $background_grey; }
+.verylightbackground { background-color: $background_grey_light; }
+.darkbackground { background-color: $background_dark; }
+
+
+
+// Typography --------------------------------------
+$main_font: 'Roboto', 'Arial', sans-serif;
+$header_font: 'Product Sans', 'Roboto', 'Arial', sans-serif;
+
+$font-weight_h1-h3: 300;
+$font-weight_h4-h6: 400;
+$font-weight_p: 400;
+
+$lineheight_header: 1.2;
+$lineheight_text: 24px;
+
+.whitetext { color: white !important; }
+.colortext { color: $text_color !important; }
+.material-icons { color: $text_main; }
+
+
+
+
+// navitems
+$navtext_size:          14px;
+$navtext_margin_left:   10px;
+$navtext_weight:        400;
+$navtext_case:          uppercase;
+
+$nav_hover_line_width: 4px;
+$nav_hover_line_distance: 12px;
+
+// navbar transparent - comment out 'navbar white'
+// $navbar_color:          transparent;
+// $navtext_color:         white;
+
+// navbar white  - comment out 'navbar transparent'
+$navbar_color:          white;
+$navtext_color:         $text_main;
+
+
+
+// Hover, Borders & Shadows --------------------
+$hover_line_width: 2px;
+$hover_line_distance: 6px;
+
+$button_line_width: 2px;
+$button_padding_left: 20px;
+$button_padding_right: 20px;
+$button_radius: 2px;
+
+$card_line_width: 1px;
+$card_radius: 3px;
+$card_line_color: #e1e1e1;
+$card_bg_grey: #F5F5F5;
+
+$card_hover: 0 2px 11px 0 rgba(0,0,0,0.2) !important;
+
+// ---------
+/* mobile only (xs) #FAFAFA */
+@media (max-width: 575px) {}
+
+/* min tablets (sm)*/
+@media (min-width: 576px) {}
+
+/* min tablets (md)*/
+@media (min-width: 768px) {}
+
+/* min desktop (lg)*/
+@media (min-width: 992px) {}
+
+/* min large desktop (xl) */
+@media (min-width: 1200px) {}

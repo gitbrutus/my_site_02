@@ -1,0 +1,126 @@
+
+@keyframes mykeyframe {
+  0% {
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);;
+  }
+  1%, 100% {
+     top: 20px;
+  }
+  50%, 100% {
+    width: 70vw;
+    // left: 50px;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);;
+  }
+  100% {
+    // width: 99vw;
+    height: 50vh;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);;
+  }
+}
+
+
+.mytrigger {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: pink;
+  position: absolute;
+  // right: 0px;
+  // left: 0px;
+  // top: 0px;
+  // bottom: 0px;
+}
+
+.box2 {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  position: static;
+  // right: 0px;
+  // left: 0px;
+  top: 30px;
+  // bottom: 0px;
+}
+
+
+  .mybox {animation: mykeyframe 500ms 0s forwards; }
+
+
+
+@keyframes mykeyframe2 {
+  0% {
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);;
+  }
+  50% {
+    width: 100vw;
+    height: 100px;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);;
+  }
+  50%, 100% { // stays left 100px until end!
+    left: 200px;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);;
+  }
+  100% {
+    width: 100px;
+    height: 500px;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);;
+  }
+}
+
+.box2 {
+  width: 200px !important;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  // right: 0px;
+  // left: 0px;
+  // top: 0px;
+  // bottom: 0px;
+}
+  .mybox2 {animation: mykeyframe 5000ms 0s forwards; }
+
+
+
+
+/* ------------------ Animations -------------------*/
+// https://material.io/design/motion/speed.html#easing
+
+/* duration:
+selection controls (e.g. switch): 100ms
+fading dialogs: Fade in/out: 150ms/75ms
+shape change (e.g. hamburger, button icon): 200ms
+detailed animations (e.g. clock ringing icon): 500ms
+open/collapse medium (e.g. nav mobile;menu;chip): 250ms/200ms
+open/collapse large (e.g. card;sheet open from button: 300ms/250ms
+*/
+
+/* squencing:
+simple (e.g. color and position): same times
+https://material.io/design/motion/choreography.html#sequencing
+*/
+
+// persistent element (start and end on screen; standard)
+
+
+
+%material-standard-ease {
+  -webkit-transition: all cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: all cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+// incoming elements
+%material-decelerate-ease {
+  -webkit-transition: all cubic-bezier(0.0, 0.0, 0.2, 1);
+  transition: all cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+// outgoing elements
+%material-accelerate-ease {
+  -webkit-transition: all cubic-bezier(0.4, 0.0, 1, 1);
+  transition: all cubic-bezier(0.4, 0.0, 1, 1);
+}

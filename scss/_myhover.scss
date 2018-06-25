@@ -1,0 +1,189 @@
+
+
+.dark-layer {
+  position: relative;
+    // width: 100%;
+    // height: 100%;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%; height:100%;
+      top:0; left:0;
+      background:rgba(0,0,0,0.2);
+      opacity: 0;
+      transition: 0.1s ease;
+      -webkit-transition: 0.1s ease;
+    }
+
+    &:hover:after {
+      opacity: 1;
+    }
+    &:hover {
+      cursor: pointer;
+      .text-overlay-hover {
+        opacity: 1;
+      }
+    }
+}
+
+.text-overlay-hover {
+  @extend .text-overlay;
+  transition: 0.1s ease;
+  opacity: 0;
+}
+
+.dark-soft-layer {
+  @extend .dark-layer;
+  &:after { background: rgba(0,0,0,0.03); }
+}
+
+
+// CARDS ---------------------------
+
+
+.hover-img-dark {
+  transition: all 100ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  &:hover {
+    .dark-layer:after {
+      opacity: 1;
+  }
+  }
+}
+
+.hover-shadow-soft {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  &:hover {
+    box-shadow: 0 2px 11px 0 rgba(0,0,0,0.2) !important;
+  }
+}
+
+.hover-shadow-hard {
+   -webkit-transition: all 100ms ease-out;
+   transition: all 100ms ease-out;
+   &:hover {
+     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12) !important;
+   }
+ }
+
+.hover-border {
+   border: $card_line_width solid $card_line_color;
+   -webkit-transition: all 100ms ease-out;
+   transition: all 100ms ease-out;
+   &:hover {
+     border: $card_line_width solid $color_main;
+   }
+}
+
+
+// BUTTONS & NAV ---------------------------
+
+%hover-btn {
+  color: $hover_line_color;
+  position: relative !important;
+}
+
+%hover-btn-after {
+  position: absolute;
+  background: $hover_line_color;
+  margin-top: $hover_line_distance;
+  height: $hover_line_width;
+  content: "";
+  display: block;
+  opacity: 0;
+}
+
+%nav-hover-after {
+  position: absolute;
+  background: $hover_line_color;
+  margin-top: $nav_hover_line_distance;
+  height: $nav_hover_line_width;
+  content: "";
+  display: block;
+  opacity: 0;
+}
+
+.nav-link, .hover-1, .hover-4, .nav-hover-4, .hover-5, .nav-hover-5 {
+  color: $text_p !important;
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  position: relative !important;
+}
+
+.hover-2, .hover-3, .nav-hover-3, .hover-bg {
+  color: $text_p !important;
+  transition: all 0.05s ease;
+  position: relative;
+}
+
+.hover-1:hover {
+  color: $hover_line_color !important;
+}
+
+.hover-2:hover {
+  color: $hover_line_color !important;
+  text-decoration: underline !important;
+}
+
+.hover-bg:hover {
+  background-color: #F4F4F6;
+}
+
+.hover-3::after {
+  @extend %hover-btn-after;
+  left: 0;
+  transition: all .2s cubic-bezier(.165,.84,.44,1);
+  width: 100%;
+}
+
+.nav-hover-3::after {
+  @extend %nav-hover-after;
+  left: 0;
+  transition: all .2s cubic-bezier(.165,.84,.44,1);
+  width: 100%;
+}
+
+.hover-4::after {
+  @extend %hover-btn-after;
+  left: 50%;
+  transition: all .3s cubic-bezier(.165,.84,.44,1);
+  width: 0;
+}
+
+.nav-hover-4::after {
+  @extend %nav-hover-after;
+  left: 50%;
+  transition: all .3s cubic-bezier(.165,.84,.44,1);
+  width: 0;
+}
+
+.hover-5::after {
+  @extend %hover-btn-after;
+  left: 0%;
+  transition: all .3s cubic-bezier(.165,.84,.44,1);
+  width: 0;
+  opacity: 0.5;
+}
+
+.nav-hover-5::after {
+  @extend %nav-hover-after;
+  left: 0%;
+  transition: all .3s cubic-bezier(.165,.84,.44,1);
+  width: 0;
+  opacity: 0.5;
+}
+
+.hover-3:hover:after, .nav-hover-3:hover:after {
+  opacity: 1;
+}
+
+.hover-4:hover:after, .nav-hover-4:hover:after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
+}
+
+.hover-5:hover:after, .nav-hover-5:hover:after {
+  width: 100%;
+  opacity: 1;
+}
