@@ -1,3 +1,5 @@
+.hoverbox:hover { cursor: pointer; }
+
 %hover-transition-pixel {
   transition: all 80ms ease-out;
   -webkit-transition: all 80ms ease-out;
@@ -38,7 +40,7 @@
 
 .dark-soft-layer {
   @extend .dark-layer;
-  &:after { background: rgba(0,0,0,0.04); }
+  &:after { background: rgba(0,0,0,0.03); }
 }
 
 
@@ -54,25 +56,56 @@
   }
 }
 
+.hover-shadow-very-soft { //pixel shadow on hover
+  @extend %hover-transition-pixel;
+  &:hover {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05) !important;
+  }
+}
+
 .hover-shadow-soft { //pixel shadow on hover
   @extend %hover-transition-pixel;
   &:hover {
-    box-shadow: 0 2px 11px 0 rgba(0,0,0,0.2) !important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1) !important;
+    border-color: white;
+  }
+}
+
+.hover-shadow-very-hard {
+  @extend %hover-transition-pixel;
+  &:hover {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12) !important;
+    border-color: white;
   }
 }
 
 .hover-shadow-hard {
+  @extend %hover-transition-pixel;
+  &:hover {
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12) !important;
+    border-color: white;
+  }
+}
+
+ .hover-shadow-very-soft {
    @extend %hover-transition-pixel;
    &:hover {
-     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12) !important;
+     box-shadow: 0 0 16px 0 rgba(0,0,0,0.16);
    }
  }
 
+.hover-shadow-pixel {
+  @extend %hover-transition-pixel;
+  &:hover {
+    box-shadow: 0 2px 11px 0 rgba(0,0,0,0.2);
+    border-color: white;
+  }
+}
+
 .hover-border {
    @extend %hover-transition-pixel;
-   border: $card_line_width solid $card_line_color;
    &:hover {
-     border: $card_line_width solid $color_main;
+     border-color: $color_main !important;
    }
 }
 
@@ -104,8 +137,8 @@
   opacity: 0;
 }
 
-.nav-link, .hover-1, .hover-4, .nav-hover-4, .hover-5, .nav-hover-5 {
-  color: $text_p !important;
+.hover-1, .hover-4, .nav-hover-4, .hover-5, .nav-hover-5 {
+  color: $text_p;
   transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
   position: relative !important;
 }
@@ -118,6 +151,14 @@
 
 .hover-1:hover {
   color: $hover_line_color !important;
+}
+
+.hover-opacity {
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  &:hover {
+    color: white !important;
+    opacity: 0.5 !important;
+  }
 }
 
 .hover-2:hover {
@@ -187,3 +228,14 @@
   width: 100%;
   opacity: 1;
 }
+
+.tooltip-inner {
+  border-radius: $button_radius;
+  background-color: $text_p;
+  font-family: $main_font;
+}
+
+// do not show the tooltip arrow
+.tooltip .arrow:before {  border-width: 0px !important; }
+
+// ICONS --------------------------------------------

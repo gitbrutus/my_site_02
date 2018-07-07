@@ -1,3 +1,4 @@
+$('[data-toggle="tooltip"]').tooltip();
 
 $('.mytrigger').click(function(){
   $('.box').toggleClass('mybox z-index-animation');
@@ -25,16 +26,26 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 
-//Navbar Shrink
+//Navbar Animation
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
-    $('.mdc-top-app-bar, .mdc-top-app-bar__row').addClass('nav-shrink');
+  if ($(document).scrollTop() > 150) { // > 50 for scroll down
+    // shadow
     $('.mdc-top-app-bar').addClass('nav-shadow');
-    $('.mdc-top-app-bar__title, .mdc-top-app-bar__navigation-icon, .mdc-top-app-bar__section .nav-link').addClass('nav-text-colorchange');
+    // text color change
+    $('.mdc-top-app-bar__navigation-icon, .mdc-top-app-bar__section .nav-link').addClass('nav-text-colorchange');
+    $('.mdc-top-app-bar__navigation-icon, .mdc-top-app-bar__section .nav-link').removeClass('hover-opacity');
+    $('.mdc-top-app-bar__title').addClass('d-flex');
+    // shrink size and background-color change
+    $('.mdc-top-app-bar, .mdc-top-app-bar__row').addClass('nav-shrink');
   } else {
-    $('.mdc-top-app-bar, .mdc-top-app-bar__row').removeClass('nav-shrink');
+    // shadow
     $('.mdc-top-app-bar').removeClass('nav-shadow');
-    $('.mdc-top-app-bar__title, .mdc-top-app-bar__navigation-icon, .mdc-top-app-bar__section .nav-link').removeClass('nav-text-colorchange');
+    // color-change
+    $('.mdc-top-app-bar__navigation-icon, .mdc-top-app-bar__section .nav-link').removeClass('nav-text-colorchange');
+    $('.mdc-top-app-bar__navigation-icon, .mdc-top-app-bar__section .nav-link').addClass('hover-opacity');
+    $('.mdc-top-app-bar__title').removeClass('d-flex');
+    // shrink
+    $('.mdc-top-app-bar, .mdc-top-app-bar__row').removeClass('nav-shrink');
   }
 });
 
@@ -178,6 +189,9 @@ var btns = document.querySelectorAll('.myripple');
 for (var i = 0, btn; btn = btns[i]; i++) {
 mdc.ripple.MDCRipple.attachTo(btn);
 }
+
+const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
+iconButtonRipple.unbounded = true;
 
 var toggleButton = new mdc.iconButton.MDCIconButtonToggle(document.getElementById('add-to-favorites'));
 

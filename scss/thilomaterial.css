@@ -1033,6 +1033,7 @@ mark {
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased; }
 
+
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
@@ -10232,18 +10233,22 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   -webkit-transform-origin: top center;
           transform-origin: top center;
   z-index: 999;
-  background: rgba(97,97,97, 0.9);
+  background: #828286;
   border-radius: 2px;
-  color: rgb(255,255,255);
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 500;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 14px;
   max-width: 170px;
   position: fixed;
   top: -500px;
   left: -500px;
-  padding: 8px;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  align-items: center;
   text-align: center; }
 
 .mdl-tooltip.is-active {
@@ -10252,7 +10257,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 
 .mdl-tooltip--large {
   line-height: 14px;
-  font-size: 14px;
+  font-size: 16px;
   padding: 16px; }
 
 @-webkit-keyframes pulse {

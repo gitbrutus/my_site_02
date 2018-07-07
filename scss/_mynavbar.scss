@@ -3,37 +3,47 @@
   background-color: $navbar_color;
   display: flex !important; // put the navbar in a container
   top: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease, background-color 0.4s ease;
+  transition: all 0.2s ease, background-color 0.4s ease;
+}
+
+// JS transition for all text in nav
+.mdc-top-app-bar__navigation-icon, .mdc-top-app-bar__title, .mdc-top-app-bar__section .nav-link {
+  -webkit-transition: all 0.2s ease, color 0.3s ease;
+  transition: all 0.2s ease, color 0.3s ease;
 }
 
 .nav-shadow { box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16); }
 .mdc-top-app-bar__navigation-icon { color: $navtext_color !important; }
-.nav-text-colorchange { color: $text_main !important; }
+.nav-text-colorchange { color: $navtext_color_scroll !important; }
+
 
 .mdc-top-app-bar__title {
   font-family: $header_font;
   font-size: 20px;
   font-weight: 300;
   color: $navtext_color;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
 // mobile toggle menu on scroll
 @media (max-width: 767px) {
   .mdc-top-app-bar, .mdc-top-app-bar__row { height: 56px;}
-  .nav-shrink { background-color: white; }
+  .nav-shrink { background-color: $navbar_color_scroll !important; }
   .nav-up { top: -56px; }
   .mdc-top-app-bar__section .nav-item { display: none; }
+  .navigation_text { display:none; }
+  // hide nav icon on mobile
+  .mdc-top-app-bar__navigation-icon { display: none; }
 }
 
 // desktop resize and color change navbar on scroll
 @media (min-width: 768px) {
-  .mdc-top-app-bar, .mdc-top-app-bar__row { height: 108px; }
+  // change between start height 108px vs 56px (and change JS)
+  .mdc-top-app-bar, .mdc-top-app-bar__row { height: 56px; }
+  // hide nav icon on desktop
   .mdc-top-app-bar__navigation-icon { display: none; }
   .nav-shrink {
-    background-color: white;
+    background-color: $navbar_color_scroll !important;
     height: 56px;
   }
 }
@@ -74,7 +84,7 @@
 
 .mdc-top-app-bar__section .nav-link {
   display: inline;
-  font-family: $main_font;
+  font-family: $navtext_font;
   font-size: $navtext_size;
   font-weight: $navtext_weight;
   height: 48px;
@@ -82,10 +92,8 @@
   text-transform: $navtext_case;
   margin-left: $navtext_margin_left;
   padding: 15px !important;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
   &:last-of-type {
-    margin-right: 10px;
+    margin-right: 18px;
   }
   // &.active::after {
   //   height: $hover_line_width;

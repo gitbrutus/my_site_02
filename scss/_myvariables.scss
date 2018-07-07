@@ -1,33 +1,25 @@
 
-$text_main:             #212121; // #414141;
-$text_p:                #202124; //#202124 cloud next;
-                                 //#424242 google design;
+$text_main:             #212121;  // google design #212121// google slides #3c4043
+$text_p:                #424242;  // google design #424242// google slides #5F6368
+$text_grey:             #828286;  // pixel; #757575;
+$text_grey_light:       #9AA0A6;
+$text_color:            #4285f4; // google main
 
-$text_color:            #4285f4;
-
-$hover_line_color:      #4285f4;
-// $hover_background_color:
 $color_main:            #4285f4;
+$color_main_darker:     #3367d6;
+$color_main_dark:       #2850a7;
 
 $background_dark:       $text_main;
 $background_grey:       #F5F5F5; // adobe & material
-$hover_grey:            #F5F5F5;
 $background_grey_light: #FAFAFA; // google pixel - use for page background!!!
+
+$hover_grey:            #F5F5F5;
+$hover_line_color:      #4285f4;
+
 $line_grey:             #e1e1e1; // adobe for $background_grey
+$line_grey_dark:        #888b8d;
 $line_grey_light:       #F4F4F6; // adobe for white background
 
-.lightbackground { background-color: $background_grey; }
-.verylightbackground { background-color: $background_grey_light; }
-.darkbackground { background-color: $background_dark; }
-
-
-// grid ------------------------------------
-// >= 576 (sm)
-// >= 768 (md)
-// >= 992 (lg)
-// >= 1140 (xl)
-// >= 1280 (1340)
-// >= 1440 (1540)
 
 
 // Typography --------------------------------------
@@ -41,18 +33,35 @@ $font-weight_p: 400;
 $lineheight_header: 1.2;
 $lineheight_text: 24px;
 
-.whitetext { color: white !important; }
-.colortext { color: $text_color !important; }
-.material-icons { color: $text_main; }
+.white { color: white !important; }
+.color { color: $color_main !important; }
+.grey { color: $text_grey !important;}
+.light-grey { color: $text_grey_light !important;}
+
+.thin { font-weight: 300; }
+.bolder { font-weight: 400; }
+.bold { font-weight: 500; }
+.text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+
+.material-icons { color: $text_p; }
+
+.lightbackground { background-color: $background_grey; }
+.verylightbackground { background-color: $background_grey_light; }
+.darkbackground { background-color: $background_dark; }
+.colorbackground { background-color: $color_main; }
+
+.nopadding { padding: 0px !important; }
+.h-100 { height: 100%; }
+.border-none { border: none !important;}
+.border-white { border-color: white !important;}
 
 
-
-
-// navitems
-$navtext_size:          14px;
+// navitems --------------------------------
+$navtext_size:          15px;
 $navtext_margin_left:   10px;
 $navtext_weight:        400;
 $navtext_case:          uppercase;
+$navtext_font:          $main_font;
 
 $nav_hover_line_width: 4px;
 $nav_hover_line_distance: 12px;
@@ -62,9 +71,10 @@ $nav_hover_line_distance: 12px;
 // $navtext_color:         white;
 
 // navbar white  - comment out 'navbar transparent'
-$navbar_color:          white;
-$navtext_color:         $text_main;
-
+$navbar_color:          transparent;
+$navtext_color:         white;
+$navbar_color_scroll:   white;
+$navtext_color_scroll:  $text_grey_light;
 
 
 // Hover, Borders & Shadows --------------------
@@ -77,13 +87,21 @@ $button_padding_right: 20px;
 $button_radius: 2px;
 
 $card_line_width: 1px;
-$card_radius: 3px;
+$card_radius: 8px;
 $card_line_color: #e1e1e1;
 $card_bg_grey: #F5F5F5;
 
 $card_hover: 0 2px 11px 0 rgba(0,0,0,0.2) !important;
 
-// ---------
+
+// grid ------------------------------------
+// >= 576 (sm)
+// >= 768 (md)
+// >= 992 (lg)
+// >= 1140 (xl)
+// >= 1280 (1360)
+// >= 1440 (1540)
+
 /* mobile only (xs) #FAFAFA */
 @media (max-width: 575px) {}
 
@@ -98,3 +116,9 @@ $card_hover: 0 2px 11px 0 rgba(0,0,0,0.2) !important;
 
 /* min large desktop (xl) */
 @media (min-width: 1200px) {}
+
+/* min large desktop (xxxl) */
+@media (min-width: 1360px) {}
+
+/* min large desktop (xxxl) */
+@media (min-width: 1540px) {}
