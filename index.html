@@ -1434,6 +1434,15 @@ Introducing Google Pixel Buds.</h2>
           </div>
 
         </div>
+        <div class="col-sm-3 text-center mb-4">
+          <!-- Copy to clipboard -->
+          <a data-clipboard-text="fick dich" class="btn btn-outline-primary btn-o-pr-1 copy-to-clipboard">Copy to Clipboard</a>
+        </div>
+        <div class="col-sm-3 text-center mb-4">
+          <!-- Snackbar -->
+          <a class="btn btn-outline-primary btn-o-pr-1" onclick="mysnackbar()">Show Toast</a>
+          <div id="snackbar">Some text some message..</div>
+        </div>
       </div>
 
 <!---------------------------- end ---------------------------->
@@ -1519,6 +1528,39 @@ Introducing Google Pixel Buds.</h2>
 
 <!---------------------------- end ---------------------------->
 
+ <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+      <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+      <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+      <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+  </div>
+
+  <div class="mdl-tabs__panel is-active" id="starks-panel">
+    <ul>
+      <li>Eddard</li>
+      <li>Catelyn</li>
+      <li>Robb</li>
+      <li>Sansa</li>
+      <li>Brandon</li>
+      <li>Arya</li>
+      <li>Rickon</li>
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="lannisters-panel">
+    <ul>
+      <li>Tywin</li>
+      <li>Cersei</li>
+      <li>Jamie</li>
+      <li>Tyrion</li>
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="targaryens-panel">
+    <ul>
+      <li>Viserys</li>
+      <li>Daenerys</li>
+    </ul>
+  </div>
+</div>
 
 <!-------------------- Tabs vertical -------------------->
 
@@ -2254,6 +2296,7 @@ Introducing Google Pixel Buds.</h2>
   </div>
 </div>
 
+<!-- small footer -->
 <div class="bg-fill footer">
   <div class="container">
     <div class="row d-flex align-items-center h-100">
@@ -2273,6 +2316,47 @@ Introducing Google Pixel Buds.</h2>
   </div>
 </div>
 
+<!-- Simple header with scrollable tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#scroll-tab-a" class="mdl-layout__tab is-active">Tab 1</a>
+      <a href="#scroll-tab-b" class="mdl-layout__tab">Tab 2</a>
+      <a href="#scroll-tab-c" class="mdl-layout__tab">Tab 3</a>
+      <a href="#scroll-tab-d" class="mdl-layout__tab">Tab 4</a>
+      <a href="#scroll-tab-e" class="mdl-layout__tab">Tab 5</a>
+      <a href="#scroll-tab-f" class="mdl-layout__tab">Tab 6</a>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+  </div>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-a">
+      <div class="page-content">2</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-b">
+      <div class="page-content">3</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-c">
+      <div class="page-content">4</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-d">
+      <div class="page-content">5</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-e">
+      <div class="page-content">6</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-f">
+      <div class="page-content">1</div>
+    </section>
+  </main>
+</div>
 
 <!-- JS -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS CDN -->
@@ -2289,6 +2373,9 @@ Introducing Google Pixel Buds.</h2>
 
   <!-- Slick slider CDN -->
   <script src="js/swiper/swiper.min.js"></script>
+
+  <!-- copy to clipboard CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 
   <!-- My Files CDN LOCAL -->
   <script src="js/scroll/smooth-scroll.min.js"></script>

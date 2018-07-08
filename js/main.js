@@ -2,10 +2,7 @@ $('[data-toggle="tooltip"]').tooltip();
 
 $('.mytrigger').click(function(){
   $('.box').toggleClass('mybox z-index-animation');
-
-
   // $('.box2').toggleClass('mybox2');
-
 })
 
 
@@ -19,7 +16,7 @@ $('.mytrigger').click(function(){
 
 // Smooth Scrolling -----------------
 // make sure you delete this part when unlinking dist/js in html
-var scroll = new SmoothScroll('a[href*="#"]', {
+var scroll = new SmoothScroll('a[href*="#_scroll"]', {
   speed: 500,
   offset: 0,
   easing: 'easeInOutCubic',
@@ -50,7 +47,6 @@ $(window).scroll(function() {
 });
 
 
-
 // Hide nav on scroll down on mobile.
 // for desktop move 'nav-up' in html out of mediaquery
 $(function(){
@@ -72,7 +68,8 @@ $(function(){
     });
 });
 
-
+//copy to clipboard
+new ClipboardJS('.copy-to-clipboard');
 
 
 // Fade text ----------------
@@ -180,6 +177,18 @@ var swiper3 = new Swiper('.swiper3', {
 
 
 
+// snackbar
+function mysnackbar() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+    // Add the "show" class to DIV
+    x.className = "show";
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000);
+}
+
+
+
 // material stuff - must be at the end of the JS file!!!
 
 let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
@@ -196,58 +205,3 @@ iconButtonRipple.unbounded = true;
 var toggleButton = new mdc.iconButton.MDCIconButtonToggle(document.getElementById('add-to-favorites'));
 
 var toggleButton2 = new mdc.iconButton.MDCIconButtonToggle(document.getElementById('add-to-favorites2'));
-
-//
-// var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#dynamic-tab-bar'));
-// var dots = document.querySelector('.dots');
-// var panels = document.querySelector('.panels');
-//
-// dynamicTabBar.tabs.forEach(function(tab) {
-//   tab.preventDefaultOnClick = true;
-// });
-//
-// function updateDot(index) {
-//   var activeDot = dots.querySelector('.dot.active');
-//   if (activeDot) {
-//     activeDot.classList.remove('active');
-//   }
-//   var newActiveDot = dots.querySelector('.dot:nth-child(' + (index + 1) + ')');
-//   if (newActiveDot) {
-//     newActiveDot.classList.add('active');
-//   }
-// }
-//
-// function updatePanel(index) {
-//   var activePanel = panels.querySelector('.panel.active');
-//   if (activePanel) {
-//     activePanel.classList.remove('active');
-//   }
-//   var newActivePanel = panels.querySelector('.panel:nth-child(' + (index + 1) + ')');
-//   if (newActivePanel) {
-//     newActivePanel.classList.add('active');
-//   }
-// }
-//
-// dynamicTabBar.listen('MDCTabBar:change', function ({detail: tabs}) {
-//   var nthChildIndex = tabs.activeTabIndex;
-//
-//   updatePanel(nthChildIndex);
-//   updateDot(nthChildIndex);
-// });
-//
-// dots.addEventListener('click', function (evt) {
-//   if (!evt.target.classList.contains('dot')) {
-//     return;
-//   }
-//
-//   evt.preventDefault();
-//
-//   var dotIndex = [].slice.call(dots.querySelectorAll('.dot')).indexOf(evt.target);
-//
-//   if (dotIndex >= 0) {
-//     dynamicTabBar.activeTabIndex = dotIndex;
-//   }
-//
-//   updatePanel(dotIndex);
-//   updateDot(dotIndex);
-// });

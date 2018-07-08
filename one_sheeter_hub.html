@@ -48,13 +48,13 @@
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
            <ul class="nav" id="pillstab" role="tablist">
             <li class="nav-item tabs">
-              <a class="nav-link hover-1 hover-opacity" id="tabno-4" data-toggle="pill" href="#aria-tabno-4" role="tab" aria-controls="aria-tabno-4" aria-selected="false">About</a>
+              <a class="nav-link hover-1 hover-opacity" id="tabno-4" data-toggle="pill" href="#section_1" role="tab" aria-controls="aria-tabno-4" aria-selected="false">About</a>
             </li>
             <li class="nav-item tabs">
-              <a class="nav-link hover-1 hover-opacity" id="tabno-4" data-toggle="pill" href="#aria-tabno-4" role="tab" aria-controls="aria-tabno-4" aria-selected="false">FAQ</a>
+              <a class="nav-link hover-1 hover-opacity" id="tabno-4" data-toggle="pill" href="section_2" role="tab" aria-controls="aria-tabno-4" aria-selected="false">FAQ</a>
             </li>
             <li class="nav-item tabs">
-              <a class="nav-link hover-1 hover-opacity" id="tabno-4" data-toggle="pill" href="#aria-tabno-4" role="tab" aria-controls="aria-tabno-4" aria-selected="false">Help</a>
+              <a class="nav-link hover-1 hover-opacity" id="tabno-4" data-toggle="pill" href="section_3" role="tab" aria-controls="aria-tabno-4" aria-selected="false">Help</a>
             </li>
            </ul>
         </section>
@@ -142,10 +142,15 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover" 
-            data-toggle="tooltip" data-placement="bottom" title="Tooltip on left">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover"
+            data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here" data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1
+&su=Google Mobile Excellence One-Sheeter
+&body=Link to the Mobile Excellence one-sheeter PDF: https://www.google.com" target="_blank" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -157,9 +162,12 @@
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
                       <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
-                      data-toggle="tooltip" data-placement="bottom" title="Tooltip on left">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -209,9 +217,13 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+
+        <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here" data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -222,9 +234,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -274,9 +289,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -287,9 +305,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -339,9 +360,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -352,9 +376,13 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>" data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -405,9 +433,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -418,9 +449,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -471,9 +505,12 @@
               <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
               Show more</a>
             <div class="text-muted ml-auto card-icons-3">
-              <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-              <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-              <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+              <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+              <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+              <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
             </div>
 
             <!-- Modal -->
@@ -484,9 +521,12 @@
                   <div class="modal-header d-flex align-items-center">
                       <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                     <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                        <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                        <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                        <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                        <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                        <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                         <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                       </div>
                     <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -536,9 +576,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -549,9 +592,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -601,9 +647,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -614,9 +663,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -666,9 +718,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -679,9 +734,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -731,9 +789,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -744,9 +805,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -796,9 +860,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -809,9 +876,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -861,9 +931,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -874,9 +947,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -927,9 +1003,12 @@
               <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
               Show more</a>
             <div class="text-muted ml-auto card-icons-3">
-              <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-              <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-              <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+              <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+              <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+              <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
             </div>
 
             <!-- Modal -->
@@ -940,9 +1019,12 @@
                   <div class="modal-header d-flex align-items-center">
                       <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                     <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                        <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                        <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                        <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                        <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                        <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                         <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                       </div>
                     <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -992,9 +1074,12 @@
               <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
               Show more</a>
             <div class="text-muted ml-auto card-icons-3">
-              <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-              <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-              <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+              <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+              <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+              <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
             </div>
 
             <!-- Modal -->
@@ -1005,9 +1090,12 @@
                   <div class="modal-header d-flex align-items-center">
                       <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                     <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                        <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                        <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                        <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                        <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                        <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                         <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                       </div>
                     <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -1057,9 +1145,12 @@
             <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
             Show more</a>
           <div class="text-muted ml-auto card-icons-3">
-            <a href="https://drive.google.com/uc?export=download&id=1OChdLlOXGLatwy6nIrUczbErvv8NNOal" class="mdc-icon-button material-icons" id="get_app_hover">get_app</a>
-            <a href="" class="mdc-icon-button material-icons" id="link_hover">link</a>
-            <a class="mdc-icon-button material-icons" id="bookmark_border_hover">print</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+            <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+            <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
           </div>
 
           <!-- Modal -->
@@ -1070,9 +1161,12 @@
                 <div class="modal-header d-flex align-items-center">
                     <h5 class="pt-2 pl-2 grey">Preview</span></h5>
                   <div class="ml-auto modal-title text-muted card-icons-3" id="Modal_01_Label">
-                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1">get_app</a>
-                      <a href="" class="mdc-icon-button material-icons" id="link_hover1">link</a>
-                      <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1">print</a>
+                      <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Download PDF">get_app</a>
+                      <a class="mdc-icon-button material-icons copy-to-clipboard" onclick="mysnackbar()"  data-clipboard-text="insert_url_here"
+data-toggle="tooltip" data-placement="bottom" title="Copy file link">link</a>
+                    <a href="" class="mdc-icon-button material-icons" id="get_app_hover1"
+data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_outline</a>
                       <a href="" class="mdc-icon-button material-icons" id="bookmark_border_hover1" data-dismiss="modal">close</a>
                     </div>
                   <!-- <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
@@ -1103,7 +1197,6 @@
   </div>
 <!---------------------------- end ---------------------------->
 
-
 </div> <!-- CLOSES MAIN BODY CONTAINER  -->
 
 <div class="bg-fill footer">
@@ -1126,6 +1219,10 @@
 </div>
 
 
+<!-- toast -->
+<div id="snackbar">Some text some message..</div>
+
+
 <!-- JS -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS CDN -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -1141,6 +1238,9 @@
 
   <!-- Slick slider CDN -->
   <script src="js/swiper/swiper.min.js"></script>
+
+  <!-- copy to clipboard CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 
   <!-- My Files CDN LOCAL -->
   <script src="js/scroll/smooth-scroll.min.js"></script>
