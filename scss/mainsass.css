@@ -411,7 +411,7 @@
 }
 
 .mdc-top-app-bar, .mdc-top-app-bar__row {
-	background-color: transparent;
+	background-color: #4285f4;
 	display: flex !important;
 	top: 0;
 	-webkit-transition: all 0.2s ease, background-color 0.4s ease;
@@ -432,6 +432,14 @@
 }
 
 .nav-text-colorchange {
+	color: #9AA0A6 !important;
+}
+
+.nav-logo-colorchange {
+	color: #828286 !important;
+}
+
+.nav-logo-text-colorchange {
 	color: #9AA0A6 !important;
 }
 

@@ -38,24 +38,26 @@
   <header class="mdc-top-app-bar"> <!-- optional: add class 'nav-shadow' -->
     <!-- <div class="container desktoponly"> -->
       <div class="mdc-top-app-bar__row" dir="ltr">
+        <!-- left side nav -->
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
           <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
-          <span class="mdc-top-app-bar__title flex-row align-items-center d-none">
-            <h4 class="grey bold mb-0">Google</h4>
-            <h5 class="pl-2 light-grey thin mb-0">One-Sheeter Hub</h4>
+          <span class="mdc-top-app-bar__title flex-row align-items-center d-flex">
+            <h4 class="white bold mb-0 nav-logo">Google</h4>
+            <h5 class="pl-2 color thin mb-0 nav-logo-text">One-Sheeter Hub</h4>
           </span>
         </section>
+        <!-- right side nav -->
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-           <ul class="nav" id="pillstab" role="tablist">
+           <ul class="nav" id="pillstab_nav" role="tablist">
             <li class="nav-item tabs">
-              <a class="nav-link hover-1 hover-opacity" id="tabno-4" data-toggle="pill" href="#section_1" role="tab" aria-controls="aria-tabno-4" aria-selected="false">About</a>
+              <a class="nav-link hover-1 hover-opacity" id="nav-item-1" data-toggle="pill" href="#section_1" role="tab" aria-controls="section_1" aria-selected="false">About</a>
             </li>
             <li class="nav-item tabs">
-              <a class="nav-link hover-1 hover-opacity" id="tabno-4" data-toggle="pill" href="section_2" role="tab" aria-controls="aria-tabno-4" aria-selected="false">FAQ</a>
+              <a class="nav-link hover-1 hover-opacity" id="nav-item-2" data-toggle="pill" href="#section_2" role="tab" aria-controls="section_2" aria-selected="false">FAQ</a>
             </li>
-            <li class="nav-item tabs">
-              <a class="nav-link hover-1 hover-opacity" id="tabno-4" data-toggle="pill" href="section_3" role="tab" aria-controls="aria-tabno-4" aria-selected="false">Help</a>
-            </li>
+           <li class="nav-item tabs">
+             <a class="nav-link hover-1 hover-opacity" id="nav-item-3" data-toggle="pill" href="#section_3" role="tab" aria-controls="section_3" aria-selected="false">Contact</a>
+           </li>
            </ul>
         </section>
       </div>
@@ -96,9 +98,7 @@
 
 
 <!---------------------------- jumbotron ---------------------------->
-
 <div class="bg bg-half-height" alt="">
-  <h4 class="white bolder mb-0 navigation_text" style="margin-top: 16px; margin-left: 32px;">Google</h4>
   <!-- <div class="gradient-dark"> -->
   <div class="container">
     <div class="row d-flex justify-content-center h-100">
@@ -114,11 +114,13 @@
 
 
 
+<div class="tab-content py-5" id="pillstabContent_nav"> <!-- OPENS ALL SECTIONS -->
 
-<div class="container">
+<!---------------------------- section 1  ---------------------------->
+<div class="tab-pane fade show active" id="section_1" role="tabpanel" aria-labelledby="nav-item-1"> <!-- OPENS SECTION 1 -->
+<div class="container"> <!-- OPENS SECTION 1 CONTAINER -->
 
-<!---------------------------- main cards start ---------------------------->
-<div class="row justify-content-center my-4">
+  <div class="row justify-content-center my-4">
 
   <!-- Mobile Excellence -->
   <div class="col-12 col-md-6 col-xl-4 my-3 my-lg-4 my-xl-5 d-flex justify-content-center">
@@ -1197,8 +1199,51 @@ data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_
   </div>
 <!---------------------------- end ---------------------------->
 
-</div> <!-- CLOSES MAIN BODY CONTAINER  -->
+</div> <!-- CLOSES SECTION 1 CONTAINER  -->
+</div> <!-- CLOSES SECTION 1  -->
 
+<!---------------------------- section 2  ---------------------------->
+<div class="tab-pane fade" id="section_2" role="tabpanel" aria-labelledby="nav-item-2"> <!-- OPENS SECTION 2 -->
+<div class="container"> <!-- OPENS SECTION 2 CONTAINER -->
+
+  <div class="row text-center justify-content-center">
+    <div class="col-12 my-4">
+      <!-- <img class="icon-small" src="images/svg/light-bulb.svg" alt=""> -->
+      <h1>FAQ</h1>
+      <p class="w-700px mx-auto">Answers to your most frequent questions</p>
+    </div>
+
+    <div class="col-12 col-lg-10 col-xl-8 text-left mb-p-l my-p">
+      <h5>Question 1</h5>
+      <p>
+        Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+      </p>
+      <h5>Question 2</h5>
+      <p>
+        Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+      </p>
+      <h5>Question 3</h5>
+      <p>
+        Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+      </p>
+    </div>
+    <div class="my-4"></div>
+  </div>
+
+</div> <!-- CLOSES SECTION 2 CONTAINER  -->
+</div> <!-- CLOSES SECTION 2  -->
+
+<!---------------------------- section 3  ---------------------------->
+<div class="tab-pane fade" id="section_3" role="tabpanel" aria-labelledby="nav-item-3"> <!-- OPENS SECTION 3 -->
+<div class="container"> <!-- OPENS SECTION 3 CONTAINER -->
+
+</div> <!-- CLOSES SECTION 3 CONTAINER  -->
+</div> <!-- CLOSES SECTION 3  -->
+
+</div> <!-- CLOSES ALL SECTIONS -->
+
+
+<!-- footer -->
 <div class="bg-fill footer">
   <div class="container h-100">
     <div class="row d-flex align-items-center">
@@ -1217,7 +1262,6 @@ data-toggle="tooltip" data-placement="bottom" title="Share file via email">mail_
     </div>
   </div>
 </div>
-
 
 <!-- toast -->
 <div id="snackbar">Some text some message..</div>
