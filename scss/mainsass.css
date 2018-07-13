@@ -2,6 +2,14 @@
 	color: white !important;
 }
 
+.white-all p {
+	color: white !important;
+}
+
+.white-all h1, .white-all h2, .white-all h3, .white-all h4, .white-all h5, .white-all h6 {
+	color: white !important;
+}
+
 .color {
 	color: #4285f4 !important;
 }
@@ -927,6 +935,14 @@ a:hover {
 .bg {
 	background-repeat: no-repeat;
 	margin-top: 0px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+@media (max-width: 575px) {
+	.bg {
+		padding-top: 70px;
+	}
 }
 
 /*bg option 1*/
@@ -939,22 +955,23 @@ a:hover {
 	height: 500px;
 }
 
+/*bg option 2 - fill container height */
 .bg-fill {
 	background-color: #4285f4;
 }
 
-/*bg option 2*/
-.bg-full-height, .bg-half-height {
+/*bg option 3*/
+.bg-half-height, .bg-full-height {
 	background-color: #4285f4;
 	background-position: center;
 	background-size: cover;
 	justify-content: center;
 	display: flex;
-	height: 100vh;
+	min-height: 50vh;
 }
 
-/*bg option 3*/
-.bg-half-height {
+/*bg option 4*/
+.bg-full-height {
 	height: 100vh;
 }
 
@@ -974,17 +991,11 @@ a:hover {
 	.bg-stretch {
 		height: 650px;
 	}
-	.bg-half-height {
-		height: 75vh;
-	}
 }
 
 @media (min-width: 1600px) {
 	.bg-stretch {
 		height: 750px;
-	}
-	.bg-half-height {
-		height: 50vh;
 	}
 }
 
@@ -1023,6 +1034,11 @@ a:hover {
 
 .w-700px {
 	max-width: 700px;
+	margin: 20px 0;
+}
+
+.w-800px {
+	max-width: 800px;
 	margin: 20px 0;
 }
 
@@ -1097,6 +1113,10 @@ a:hover {
 	}
 	.display-3 {
 		font-size: 4.5rem;
+	}
+	.w-xl-full {
+		max-width: 100%;
+		padding: 0px 20px;
 	}
 }
 
@@ -1423,7 +1443,6 @@ a:hover {
 }
 
 .footer {
-	margin-top: 20px;
 	padding: 40px 0px;
 }
 

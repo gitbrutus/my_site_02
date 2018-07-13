@@ -35,6 +35,10 @@ $lineheight_header: 1.2;
 $lineheight_text: 24px;
 
 .white { color: white !important; }
+.white-all {
+  & p { color: white !important; };
+  & h1, h2, h3, h4, h5, h6 { color: white !important; };
+}
 .color { color: $color_main !important; }
 .grey { color: $text_grey !important;}
 .light-grey { color: $text_grey_light !important;}

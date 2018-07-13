@@ -6,7 +6,6 @@ $('.mytrigger').click(function(){
 })
 
 
-
 //   $(".navbar-toggler").click(function(){
 //     $(".hamburger").toggleClass("is-active");
 //     $(".")
@@ -22,10 +21,14 @@ var scroll = new SmoothScroll('a[href*="#_scroll"]', {
   easing: 'easeInOutCubic',
 });
 
+function topFunction() {
+    document.body.scrollTop = 1;
+    document.documentElement.scrollTop = 1;
+}
 
 //Navbar Animation
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) { // > 50 for scroll down
+  if ($(document).scrollTop() > 0) { // > 50 for scroll down
     // shadow
     $('.mdc-top-app-bar').addClass('nav-shadow');
     // text color change

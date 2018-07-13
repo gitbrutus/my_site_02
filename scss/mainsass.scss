@@ -161,6 +161,12 @@ a {
   // background-image: url('../images/jpg/festival_v3.jpeg');
   background-repeat: no-repeat;
   margin-top: 0px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 575px) {
+  .bg { padding-top: 70px; }
 }
 
 /*bg option 1*/
@@ -173,23 +179,27 @@ a {
   height: 500px;
 }
 
-.bg-fill { background-color: $color_main; }
+/*bg option 2 - fill container height */
+.bg-fill {
+  background-color: $color_main;
+}
 
-/*bg option 2*/
-.bg-full-height {
+/*bg option 3*/
+.bg-half-height {
   background-color: $color_main;
   background-position: center;
   background-size: cover;
   justify-content: center;
   display: flex;
+  min-height: 50vh;
+}
+
+/*bg option 4*/
+.bg-full-height {
+  @extend .bg-half-height;
   height: 100vh;
 }
 
-/*bg option 3*/
-.bg-half-height {
-  @extend .bg-full-height;
-  height: 100vh;
-}
 
 @media (min-width: 768px) {
   .bg-stretch { margin-top: 0px; }
@@ -201,17 +211,11 @@ a {
 
 @media (min-width: 1200px) {
   .bg-stretch { height: 650px; }
-  .bg-half-height {
-    height: 75vh;
-  }
 }
 
 @media (min-width: 1600px) {
   .bg-stretch {
     height: 750px;
-  }
-  .bg-half-height {
-    height: 50vh;
   }
 }
 
@@ -248,6 +252,11 @@ a {
 }
 .w-700px {
   max-width: 700px;
+  margin: 20px 0;
+}
+
+.w-800px {
+  max-width: 800px;
   margin: 20px 0;
 }
 
@@ -295,6 +304,10 @@ a {
   .left-padding-block { padding-left: 120px; }
   .right-padding-block { padding-right: 120px; }
   .display-3 { font-size: 4.5rem; }
+  .w-xl-full {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
 }
 // BLOCKS -------------------------------- END
 
@@ -629,7 +642,6 @@ a {
 }
 
 .footer {
-  margin-top: 20px;
   padding: 40px 0px;
   & img {
     margin-top: 8px;
