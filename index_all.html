@@ -1,0 +1,2389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Thilo S.">
+
+  <!-- icons & fonts CDN -->
+  <link rel="icon" href="https://www.google.com/s2/favicons?domain=www.google.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,500|Oswald:300,400,500|Quicksand:300,400,500">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,400,600|Roboto+Condensed:300,400,600|Product+Sans:300,400,500">
+
+  <!-- Bootstrap & Material CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="scss/swiper/swiper.css">
+
+  <!-- Fade CDN -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+
+  <!-- My Files LOCAL -->
+  <!-- <link rel="stylesheet" href="scss/material-components-web.css"> -->
+  <link rel="stylesheet" href="scss/thilomaterial.css">
+  <!-- <link rel="stylesheet" href="scss/main.css"> -->
+  <link rel="stylesheet" href="scss/mainsass.css">
+  <link rel="stylesheet" href="fonts/mywebfontscss.css" type="text/css" charset="utf-8" />
+
+</head>
+<body>
+
+<!---------------------------- toolbar ---------------------------->
+<!-- change between toolbar-white OR toolbar-transparent OR toolbar-opacity -->
+  <header class="mdc-top-app-bar nav-shadow"> <!-- optional: add class 'nav-shadow' -->
+    <!-- <div class="container desktoponly"> -->
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <span class="mdc-top-app-bar__title">Thilo New</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+           <ul class="nav" id="pillstab" role="tablist">
+            <li class="nav-item tabs">
+              <a class="nav-link nav-hover-4" id="tabno-4" data-toggle="pill" href="#aria-tabno-4" role="tab" aria-controls="aria-tabno-4" aria-selected="false">Home</a>
+            </li>
+            <li class="nav-item tabs">
+              <a class="nav-link nav-hover-4" id="tabno-4" data-toggle="pill" href="#aria-tabno-4" role="tab" aria-controls="aria-tabno-4" aria-selected="false">About</a>
+            </li>
+            <li class="nav-item tabs">
+              <a class="nav-link nav-hover-4" id="tabno-4" data-toggle="pill" href="#aria-tabno-4" role="tab" aria-controls="aria-tabno-4" aria-selected="false">Menu</a>
+            </li>
+             <li class="nav-item tabs">
+               <a class="nav-link nav-hover-4" id="tabno-4" data-toggle="pill" href="#aria-tabno-4" role="tab" aria-controls="aria-tabno-4" aria-selected="false">Contact</a>
+             </li>
+           </ul>
+        </section>
+      </div>
+    <!-- </div> -->
+  </header>
+
+  <!-- temporary drawer use from  https://material.io/components/web/catalog/drawers/ -->
+  <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+    <nav class="mdc-drawer__drawer">
+      <header class="mdc-drawer__header">
+        <div class="mdc-drawer__header-content">
+          Header here
+        </div>
+      </header>
+      <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star
+        </a>
+      </nav>
+    </nav>
+  </aside>
+
+<!---------------------------- jumbotron ---------------------------->
+
+<div class="bg bg-full-height" alt="">
+  <!-- <div class="gradient-dark"> -->
+  <div class="container">
+    <div class="row covertext-height">
+      <div class="col-12 text-center my-auto white">
+        <!-- <img src="images/svg/Google_logo_white.svg" width="" height="32" alt=""> -->
+        <h1 class="display-3" data-aos="fadeup-1">Performance Festival</h1>
+        <h5 class="thin py-4">Google Performance Festival ’18 is your chance to unlock new opportunities for your business, uplevel your skills, and uncover what’s next for Performance</h5>
+        <a href="" class="btn btn-primary mt-4 mb-2">Breakout Sessions</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+<!---------------------------- main ---------------------------->
+<!-------------------- 1 label std -------------------->
+      <div class="row text-center small-gutters justify-content-center">
+        <div class="col-md-12 my-4">
+          <!-- <img class="icon-small" src="images/svg/light-bulb.svg" alt=""> -->
+          <h1 id="jq1">Center Block Headline</h1>
+          <p class="w-700px mx-auto">Pixel takes brilliant photos in bright light, low light, and any light. That’s why tech experts gave it a DxOMark Mobile score of 89. </p>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 label icon -------------------->
+      <div class="row text-center small-gutters justify-content-center" data-aos="fadeup-1">
+        <div class="col-md-12 my-4">
+            <img src="images/svg/pixel_icon.svg" class="icon-medium" alt="">
+            <h1>Center Block Headline Logo</h1>
+            <p class="w-700px mx-auto ">Learn more about landmarks or look up books, movies, albums and artwork using Google Lens.4</p>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 label narrow button -------------------->
+      <div class="row text-center small-gutters justify-content-center">
+        <div class="col-md-12 my-4">
+            <h1 data-aos="fadeup-1">Center Block Headline Button</h1>
+            <p class="w-700px mx-auto ">Transfer the stuff you love to your new</br> Pixel 2 in 10 minutes or less.</p>
+            <a href="" class="btn btn-0 slide-btn">Button 0</a>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 label with img outside -------------------->
+      <div class="row justify-content-center justify-content-md-between">
+        <div class="order-md-1 col-6 col-md-auto mt-4 align-self-center text-center">
+          <img src="images/svg/gift.svg" alt="" class="icon-xl-large" >
+        </div>
+        <div class="order-md-3 col-6 col-md-auto mt-4 align-self-center text-center">
+          <img src="images/svg/gift.svg" alt="" class="icon-xl-large" >
+        </div>
+        <div class="col-12 order-md-2 col-md-6 my-4 w-400px text-center">
+          <h2 class="mb-h1">Buy Pixelbook and get a Google Home on us</h2>
+          <p>(just add both to your cart)</p>
+          <div class="align-self-end mt-5">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 label left wide -------------------->
+      <div class="row">
+        <div class="col-sm-6 text-left block-pr-wide">
+            <h1>Left Wide Block Headline</h1>
+            <p class="w-700px">Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 label left narrow -------------------->
+      <div class="row">
+        <div class="col-sm-6 text-left block-pr-narrow">
+            <h1>Left Narrow Block Headline</h1>
+            <p class="w-700px">Chromecast Audio uses Wi-Fi to send your favorite tunes from your phone to any speaker in the house—no pairing necessary.</p>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 label left center -------------------->
+    <div class="row">
+      <div class="col-sm-7 col-lg-6 text-left w-sm-450px block-pl-wide">
+        <h1 class="mb-h1">Left Center Block Headline</h1>
+        <p class="pb-3">Chromecast Audio uses Wi-Fi to send your favorite tunes from your phone to any speaker in the house—no pairing necessary.</p>
+        <div class="mt-4 media w-sm-450px">
+          <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+            <i class="material-icons color mr-3">check_circle</i>
+          </button>
+          <div class="media-body">
+              <h5 class="mt-1">Expandable Headline 1</h5>
+              <!-- <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p> -->
+          </div>
+        </div>
+        <div class="mt-4 media">
+          <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+            <i class="material-icons color mr-3">check_circle</i>
+          </button>
+          <div class="media-body">
+              <h5 class="mt-1 color">Expandable Headline 1</h5>
+              <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+          </div>
+        </div>
+        <div class="mt-4 media">
+          <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+            <i class="material-icons color mr-3">check_circle</i>
+          </button>
+          <div class="media-body">
+              <h5 class="mt-1">Expandable Headline 1</h5>
+              <!-- <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+          </div> -->
+          </div>
+        </div>
+        <div class="mt-4 media">
+          <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+            <i class="material-icons color mr-3">check_circle</i>
+          </button>
+          <div class="media-body">
+              <h5 class="mt-1">Expandable Headline 1</h5>
+              <!-- <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+          </div> -->
+          </div>
+        </div>
+        <div class="mt-4 media">
+          <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+            <i class="material-icons color mr-3">check_circle</i>
+          </button>
+          <div class="media-body">
+              <h5 class="mt-1">Expandable Headline 1</h5>
+              <!-- <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+          </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5 col-lg-6"></div>
+    </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 label right wide -------------------->
+      <div class="row">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6 text-left block-pl-wide">
+            <h1>Right Wide Block Headline</h1>
+            <p class="w-700px">Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 label right narrow -------------------->
+      <div class="row">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6 text-left block-pl-narrow">
+            <h1>Right Narrow Block Headline</h1>
+            <p class="w-700px">Chromecast Audio uses Wi-Fi to send your favorite tunes from your phone to any speaker in the house—no pairing necessary.</p>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 label right wide center -------------------->
+      <div class="row">
+        <div class="col-sm-5 col-lg-6">
+        </div>
+        <div class="col-sm-7 col-lg-6 text-left w-sm-500px">
+          <h1 class="mb-h1">Right Center Block Headline</h1>
+          <p class="pb-3">Chromecast Audio uses Wi-Fi to send your favorite tunes from your phone to any speaker in the house—no pairing necessary.</p>
+          <div class="mt-4 media w-sm-500px">
+            <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+              <i class="material-icons color mr-3">check_circle</i>
+            </button>
+            <div class="media-body">
+                <h5 class="mt-1">Expandable Headline 1</h5>
+                <!-- <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p> -->
+            </div>
+          </div>
+          <div class="mt-4 media">
+            <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+              <i class="material-icons color mr-3">check_circle</i>
+            </button>
+            <div class="media-body">
+                <h5 class="mt-1 color">Expandable Headline 1</h5>
+                <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+            </div>
+          </div>
+          <div class="mt-4 media">
+            <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+              <i class="material-icons color mr-3">check_circle</i>
+            </button>
+            <div class="media-body">
+                <h5 class="mt-1">Expandable Headline 1</h5>
+                <!-- <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+            </div> -->
+            </div>
+          </div>
+          <div class="mt-4 media">
+            <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+              <i class="material-icons color mr-3">check_circle</i>
+            </button>
+            <div class="media-body">
+                <h5 class="mt-1">Expandable Headline 1</h5>
+                <!-- <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+            </div> -->
+            </div>
+          </div>
+          <div class="mt-4 media">
+            <button class="mdl-button mdl-js-button mdl-button--icon mr-3">
+              <i class="material-icons color mr-3">check_circle</i>
+            </button>
+            <div class="media-body">
+                <h5 class="mt-1">Expandable Headline 1</h5>
+                <!-- <p>Watch TV shows, movies, and sports, play games, listen to music, and more on the biggest screen and the best speakers in your home with Chromecast.</p>
+            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 2 labels std -------------------->
+      <div class="row text-center small-gutters  justify-content-center">
+        <div class="col-sm-6 col-xl-4 my-4">
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>2 Block Headline</h4>
+            <p class="w-lg-300px w-sm-250px w-350px mx-auto">Learn more about your Pixel and find answers to common questions by searching.</p>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-4 my-4">
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>2 Block Headline</h4>
+            <p class="w-lg-300px w-sm-250px w-350px mx-auto ">Learn more about your Pixel and find answers to common questions by searching.</p>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more2</a>
+          </div>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 2 labels wide -------------------->
+      <div class="row text-center small-gutters ">
+        <div class="col-sm-6 my-4">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>2 Block Wide Headline</h4>
+            <p class="w-lg-300px w-sm-250px w-350px mx-auto">Learn more about your Pixel and find answers to common questions by searching.</p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 my-4">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>2 Block Wide Headline</h4>
+            <p class="w-lg-300px w-sm-250px w-350px mx-auto ">Learn more about your Pixel and find answers to common questions by searching.</p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more2</a>
+          </div>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 3 labels std -------------------->
+      <div class="row text-center small-gutters ">
+        <div class="col-md-4 my-4">
+          <div>
+            <img id="testlink1" class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>3 Block Headline</h4>
+            <p class="w-lg-250px w-350px mx-auto">Learn more about your Pixel and find answers to common questions by searching.</p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 my-4">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>3 Block Headline</h4>
+            <p class="w-lg-250px w-350px mx-auto p-mar-2">Everything you need to know to get the most from your Pixel.</p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more2</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 my-4">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>3 Block Headline</h4>
+            <p class="w-lg-250px w-350px mx-auto">Share suggestions, ask questions and connect with other Pixel users from around the world.</p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more3</a>
+          </div>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 3 labels narrow -------------------->
+      <div class="row text-center small-gutters justify-content-center">
+        <div class="col-sm-4 col-lg-3 col-xl-2 my-2">
+          <h3 class="sm-h4">3 BNH</h3>
+          <p class="w-160px mx-auto">large pixels for great shots in any light</p>
+        </div>
+
+        <div class="col-sm-4 col-lg-3 my-2">
+          <h3 class="sm-h4">3 BNH</h3>
+          <p class="w-160px mx-auto">large pixels for great shots in any light</p>
+        </div>
+        <div class="col-sm-4 col-lg-3 col-xl-2 my-2">
+          <h3 class="sm-h4">3 BNH</h3>
+          <p class="w-160px mx-auto">large pixels for great shots in any light</p>
+        </div>
+      </div>
+      <div class="row text-center justify-content-center">
+        <div class="col-12 mt-4">
+          <a class="btn btn-outline-primary btn-xs" href="" role="button">See how it works</a>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 3 labels very narrow -------------------->
+    <div class="row">
+      <div class="col-12 text-center d-flex flex-row justify-content-center">
+        <a href="https://www.google.com" target="_blank">
+          <div class="my-4 mx-md-4 p-2 hoverbox">
+            <img src="images/svg/gift.svg" alt="" class="icon-x-large mb-3 mb-md-4_5" >
+            <h6>Google Pixelbook</h6>
+          </div>
+        </a>
+        <a href="https://www.google.com" target="_blank">
+          <div class="my-4 mx-md-4 p-2 hoverbox">
+            <img src="images/svg/gift.svg" alt="" class="icon-x-large mb-3 mb-md-4_5" >
+            <h6>Google Pixelbook</h6>
+          </div>
+        </a>
+        <a href="https://www.google.com" target="_blank">
+          <div class="my-4 mx-md-4 p-2 hoverbox">
+            <img src="images/svg/gift.svg" alt="" class="icon-x-large mb-3 mb-md-4_5" >
+            <h6>Google Pixelbook</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 + 3 combined label -------------------->
+      <div class="row text-center small-gutters  justify-content-center">
+        <div class="col-md-12 my-4">
+          <div>
+            <!-- <img class="icon-small" src="images/svg/light-bulb.svg" alt=""> -->
+            <h1>1 Block plus 3 Blocks Headline</h1>
+            <p class="w-700px mx-auto ">Pixel takes brilliant photos in bright light, low light, and any light. That’s why tech experts gave it a DxOMark Mobile score of 89. </p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center small-gutters ">
+        <div class="col-md-4 my-2">
+          <div>
+            <img class="icon-xl-large" src="images/svg/unicorn.svg" alt="">
+            <h4>1 Block plus 3 Blocks</h4>
+            <p class="w-lg-250px w-350px mx-auto">Learn more about your Pixel and find answers to common questions by searching.</p>
+          </div>
+          <!-- <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div> -->
+        </div>
+
+        <div class="col-md-4 my-2">
+          <div>
+            <img class="icon-xl-large" src="images/svg/brutus.svg" alt="">
+            <h4>1 Block plus 3 Blocks</h4>
+            <p class="w-lg-250px w-350px mx-auto p-mar-2">Everything you need to know to get the most from your Pixel.</p>
+          </div>
+          <!-- <div class="align-self-end">
+            <a href="https://www.google.com">Learn more2</a>
+          </div> -->
+        </div>
+
+        <div class="col-md-4 my-2">
+          <div>
+            <img class="icon-xl-large img-fluid" src="images/svg/koala.svg" alt="">
+            <h4>1 Block plus 3 Blocks</h4>
+            <p class="w-lg-250px w-350px mx-auto">Share suggestions, ask questions and connect with other Pixel users from around the world.</p>
+          </div>
+          <!-- <div class="align-self-end">
+            <a href="https://www.google.com">Learn more3</a>
+          </div> -->
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section aaxX</p><hr>
+
+<!-------------------- 1 + 3 combined label small -------------------->
+    <div class="row text-center small-gutters justify-content-center">
+        <div class="col-md-12 my-4">
+          <div>
+            <h1>1 Block plus 3 Blocks Headline Small</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center small-gutters justify-content-center">
+      <div class="col-md-3 my-2">
+        <div>
+          <img src="images/svg/light-bulb.svg" class="icon-medium mt-1 mb-4" alt="">
+          <h5>Water‑resistant metal unibody</h5>
+          <!-- <p class="w-lg-250px w-350px mx-auto">Share suggestions, ask questions and connect with others.</p> -->
+        </div>
+      </div>
+      <div class="col-md-3 my-2">
+        <div>
+          <img src="images/svg/light-bulb.svg" class="icon-medium mt-1 mb-4" alt="">
+          <h5>The latest Qualcomm® Snapdragon™ 835 processor</h5>
+          <!-- <p class="w-lg-250px w-350px mx-auto">Share suggestions, ask questions and connect with others.</p> -->
+        </div>
+      </div>
+      <div class="col-md-3 my-2">
+        <div>
+          <img src="images/svg/light-bulb.svg" class="icon-medium mt-1 mb-4" alt="">
+          <h5>Up to 7 hours of battery on 15 minutes of charging</h5>
+          <!-- <p class="w-lg-250px w-350px mx-auto">Share suggestions, ask questions and connect with others.</p> -->
+        </div>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section bbxX</p><hr>
+
+<!-------------------- 3 blocks with left media object -------------------->
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="media">
+            <img class="align-self-start mr-3 icon-small" src="images/svg/light-bulb.svg" alt="">
+            <div class="media-body">
+              <h5>3 Block with Label</h5>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p><br>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="media">
+            <img class="align-self-start mr-3 icon-small" src="images/svg/light-bulb.svg" alt="">
+            <div class="media-body">
+              <h5>3 Block with Label</h5>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p><br>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="media">
+            <img class="align-self-start mr-3 icon-small" src="images/svg/light-bulb.svg" alt="">
+            <div class="media-body">
+              <h5>3 Block with Label</h5>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p><br>
+            </div>
+          </div>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- full row blocks with left media object -------------------->
+      <div class="row">
+        <div class="col-md-12 my-2">
+          <ul class="list-unstyled">
+            <li class="media">
+              <img class="mr-3 icon-small" src="images/svg/light-bulb.svg" alt="">
+              <div class="media-body">
+                <h5>List-based media object</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p><br>
+              </div>
+            </li>
+            <li class="media">
+              <img class="mr-3 icon-small" src="images/svg/light-bulb.svg" alt="">
+              <div class="media-body">
+                <h5>List-based media object</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p><br>
+              </div>
+            </li>
+            <li class="media">
+              <img class="mr-3 icon-small" src="images/svg/light-bulb.svg" alt="">
+              <div class="media-body">
+                <h5>List-based media object</h5>
+                <p class="p-mb-1">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<br></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 4 labels std -------------------->
+      <div class="row text-center small-gutters ">
+        <div class="col-lg-3 col-sm-6 my-4">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>4 Blocks Headline</h4>
+            <p class="w-sm-250px w-350px mx-auto">Find out which services and partners work with Google Home.</p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 my-4">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>4 Blocks Headline</h4>
+            <p class="w-sm-250px w-350px mx-auto">Find out which services and partners work with Google Home.</p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more2</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 my-4">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>4 Blocks Headline</h4>
+            <p class="w-sm-250px w-350px mx-auto">Find out which services and partners work with Google Home.</p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more3</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 my-4">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>4 Blocks Headline</h4>
+            <p class="w-sm-250px w-350px mx-auto">Find out which services and partners work with Google Home.</p>
+          </div>
+          <div class="align-self-end">
+            <a href="https://www.google.com">Learn more3</a>
+          </div>
+        </div>
+
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 4 labels icons & buttons -------------------->
+      <div class="row text-center small-gutters ">
+        <div class="col-lg-3 col-sm-6 my-4">
+          <div>
+            <img src="images/svg/pixel_icon.svg" class="icon-medium mb-4" alt="">
+            <h4 class="w-200px  w-sm-250px w-lg-275px mx-auto">Trade in your old phone for money back</h4>
+          </div>
+          <a class="btn btn-outline-primary btn-o-pr-1" href="" role="button">Learn</a>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 my-4">
+          <div>
+            <img src="images/svg/pixel_icon.svg" class="icon-medium mb-4" alt="">
+            <h4 class="w-200px  w-sm-250px w-lg-275px mx-auto">Trade in your old phone for money back</h4>
+          </div>
+          <a class="btn btn-outline-primary btn-o-pr-1" href="" role="button">Learn</a>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 my-4">
+          <div>
+            <img src="images/svg/pixel_icon.svg" class="icon-medium mb-4" alt="">
+            <h4 class="w-200px  w-sm-250px w-lg-275px mx-auto">Trade in your old phone for money back</h4>
+          </div>
+          <a class="btn btn-outline-primary btn-o-pr-1" href="" role="button">Learn</a>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 my-4">
+          <div>
+            <img src="images/svg/pixel_icon.svg" class="icon-medium mb-4" alt="">
+            <h4 class="w-200px  w-sm-250px w-lg-275px mx-auto">Trade in your old phone for money back</h4>
+          </div>
+          <a class="btn btn-outline-primary btn-o-pr-1" href="" role="button">Learn</a>
+        </div>
+
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 4 labels narrow -------------------->
+      <div class="row text-center small-gutters justify-content-center">
+        <div class="col-sm-6 col-lg-3 col-xl-2 my-2">
+          <h4 class="numberCircle mx-auto mb-3">1</h4>
+          <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xl-2 my-2">
+          <h4 class="numberCircle mx-auto mb-3">1</h4>
+          <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xl-2 my-2">
+          <h4 class="numberCircle mx-auto mb-3">1</h4>
+          <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xl-2 my-2">
+          <h4 class="numberCircle mx-auto mb-3">8</h4>
+          <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+        </div>
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 8 labels  -------------------->
+    <div class="row text-center small-gutters justify-content-center">
+      <div class="col-12 col-lg-6">
+        <div class="row">
+          <div class="col-6 col-sm-3">
+            <h4 class="numberCircle mx-auto mb-3">1</h4>
+            <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+          </div>
+          <div class="col-6 col-sm-3">
+            <h4 class="numberCircle mx-auto mb-3">1</h4>
+            <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+          </div>
+          <div class="col-6 col-sm-3">
+            <h4 class="numberCircle mx-auto mb-3">1</h4>
+            <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+          </div>
+          <div class="col-6 col-sm-3">
+            <h4 class="numberCircle mx-auto mb-3">1</h4>
+            <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col-6 col-sm-3">
+              <h4 class="numberCircle mx-auto mb-3">1</h4>
+              <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+            </div>
+            <div class="col-6 col-sm-3">
+              <h4 class="numberCircle mx-auto mb-3">1</h4>
+              <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+            </div>
+            <div class="col-6 col-sm-3">
+              <h4 class="numberCircle mx-auto mb-3">1</h4>
+              <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+            </div>
+            <div class="col-6 col-sm-3">
+              <h4 class="numberCircle mx-auto mb-3">1</h4>
+              <p class="w-200px  w-sm-250px w-lg-275px mx-auto">4 Block Narrow Text</p>
+            </div>
+        </div>
+      </div>
+    </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 4 labels narrow -------------------->
+      <div class="row text-center small-gutters justify-content-center">
+        <div class="col-sm-12">
+          <h1 class="hx-mb-36px">4 Blocks 2 Rows Narrow Headline</h1>
+        </div>
+
+        <div class="col-sm-6 col-lg-5 my-1 left-padding-block">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>4 Blocks 2 Rows Narrow</h4>
+            <p class="w-200px  w-sm-250px w-lg-275px mx-auto">Learn more about your Pixel and find answers to common questions by searching.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-5 my-1 right-padding-block">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>4 Blocks 2 Rows Narrow</h4>
+            <p class="w-200px  w-sm-250px w-lg-275px mx-auto">Learn more about your Pixel and find answers to common questions by searching.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-5 my-1 left-padding-block">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>4 Blocks 2 Rows Narrow</h4>
+            <p class="w-200px  w-sm-250px w-lg-275px mx-auto">Learn more about your Pixel and find answers to common questions by searching.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-5 my-1 right-padding-block">
+          <div>
+            <img class="icon-small" src="images/svg/light-bulb.svg" alt="">
+            <h4>4 Blocks 2 Rows Narrow</h4>
+            <p class="w-200px  w-sm-250px w-lg-275px mx-auto">Learn more about your Pixel and find answers to common questions by searching.</p>
+          </div>
+        </div>
+
+      </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!---------------------------- 2 Background Boxes ---------------------------->
+    <div class="row text-center justify-content-center">
+      <div class="col-md-6 text-center mb-3">
+        <div class="p-5 align-items-center verylightbackground">
+          <h2>Verylightbackground</h2>
+          <p class="w-700px">You are fat</p>
+        </div>
+      </div>
+      <div class="col-md-6 text-center mb-3">
+        <div class="p-5 align-items-center lightbackground">
+          <h2>lightbackground</h2>
+          <p class="w-700px">You are fat</p>
+        </div>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!---------------------------- 1 Background Box ---------------------------->
+    <div class="row text-center justify-content-center">
+      <div class="col-12 text-center mb-3">
+        <div class="p-5 align-items-center lightbackground">
+          <h2>Lightbackground meets real-time translation.</br>
+Introducing Google Pixel Buds.</h2>
+          <p class="w-700px mx-auto">You are fat</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+      <div class="col-12 text-center mb-3">
+        <div class="p-5 align-items-center darkbackground">
+          <h2 class="white">Lightbackground meets real-time translation.</br>
+Introducing Google Pixel Buds.</h2>
+          <p class="white w-700px mx-auto">You are fat</p>
+        </div>
+      </div>
+    </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 2 pictures -------------------->
+
+  <div class="row mb-5">
+    <div class="col-md-6 mb-3">
+      <div class="dark-layer">
+        <img src="images/jpg/pic07.jpg" class="img-fluid" />
+        <div class='text-overlay'>Image col-6 left</div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="dark-layer">
+        <img src="images/jpg/pic08.jpg" class="img-fluid" />
+        <div class='text-overlay-hover'>Image col-6 right</div>
+      </div>
+    </div>
+  </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- 1 picture -------------------->
+
+  <div class="row mb-5">
+    <div class="col-12 mb-3 height-400px">
+      <div class="dark-layer">
+        <img src='images/jpg/wp03.jpg' class="img-fluid"/>
+        <div class='text-overlay-hover'>Image col-12</div>
+      </div>
+    </div>
+  </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- buttons -------------------->
+      <div class="row text-center justify-content-center">
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a class="btn btn-primary white btn-pr-0">btn-pr-0</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-primary btn-pr-1">btn-pr-1</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-primary btn-pr-2">btn-pr-2</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-outline-primary btn-o-pr-0">Outline</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-outline-primary btn-o-pr-1">btn-o-pr-1</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-outline-primary btn-o-pr-2">btn-o-pr-2</a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a class="btn btn-primary white btn-pr-0 hover-shadow-hard">btn-pr-0</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-primary btn-pr-1 shadow-soft">btn-pr-1</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-primary btn-pr-2 shadow-hard">btn-pr-2</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-outline-primary btn-o-pr-0">Outline</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-outline-primary btn-o-pr-1">btn-o-pr-1</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-outline-primary btn-o-pr-2">btn-o-pr-2</a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-0 slide-btn">Slide Up</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-1 slide-btn">Slide Down</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-2 slide-btn">Slide Right</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-3 slide-btn">Slide Outside</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-4 slide-btn">Slide inside</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="btn btn-outline-primary btn-o-pr-2 btn-xs">btn-xs</a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="mdc-button mdc-button--raised myripple">Material 1</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="mdc-button mdc-button--transparent myripple color">Material 2</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a href="" class="mdc-button mdc-button--outlined myripple">Material 3</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a class="mdc-button mdc-button--raised white myripple">
+            <i class="material-icons mdc-button__icon white" aria-hidden="true">favorite</i>
+            Material 4</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a class="mdc-button mdc-button--transparent myripple color">
+            <i class="material-icons mdc-button__icon color" aria-hidden="true">favorite</i>
+            Material 5</a>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center mb-4">
+          <a class="mdc-button mdc-button--outlined myripple">
+            <i class="material-icons mdc-button__icon color" aria-hidden="true">favorite</i>
+            Material 6</a>
+        </div>
+      </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- Material Menus -------------------->
+
+      <div class="row text-center justify-content-center" style="height:100px;">
+        <div class="col-sm-3 text-center align-self-center">
+          <!-- Left aligned menu below button -->
+          <button id="demo-menu-lower-left"
+                  class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+          </button>
+
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+              for="demo-menu-lower-left">
+            <li class="mdl-menu__item">Some Action</li>
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
+            <li disabled class="mdl-menu__item">Disabled Action</li>
+            <li class="mdl-menu__item">Yet Another Action</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 text-center align-self-center">
+          <!-- Left aligned menu below button -->
+          <button id="demo-menu-lower-right"
+                  class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+          </button>
+
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+          <li class="mdl-menu__item">Some Action</li>
+          <li class="mdl-menu__item">Another Action</li>
+          <li disabled class="mdl-menu__item">Disabled Action</li>
+          <li class="mdl-menu__item">Yet Another Action</li>
+        </ul>
+        </div>
+
+        <div class="col-sm-3 text-center align-self-center">
+          <!-- Left aligned menu below button -->
+          <button id="demo-menu-top-left" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+          </button>
+
+          <ul class="mdl-menu mdl-menu--top-left mdl-js-menu mdl-js-ripple-effect"
+              for="demo-menu-top-left">
+            <li class="mdl-menu__item">Some Action</li>
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
+            <li disabled class="mdl-menu__item">Disabled Action</li>
+            <li class="mdl-menu__item">Yet Another Action</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 text-center align-self-center">
+          <button id="demo-menu-top-right" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+          </button>
+
+          <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+              data-mdl-for="demo-menu-top-right">
+            <li class="mdl-menu__item">Some Action</li>
+            <li class="mdl-menu__item">Another Action</li>
+            <li disabled class="mdl-menu__item">Disabled Action</li>
+            <li class="mdl-menu__item">Yet Another Action</li>
+          </ul>
+        </div>
+
+      </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- Material Stuff -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-1 text-center mb-4 justify-content-center d-flex">
+        <!-- for default unchecked simply remove the "checked" -->
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+          <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+          <span class="mdl-switch__label"></span>
+        </label>
+      </div>
+      <div class="col-sm-1 text-center mb-4">
+        <!-- for default unchecked simply remove the "checked" -->
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+          <span class="mdl-checkbox__label">Checkbox</span>
+        </label>
+      </div>
+      <div class="col-sm-2 text-center mb-4">
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+          <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+          <span class="mdl-radio__label">Second</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+          <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+          <span class="mdl-radio__label">First</span>
+      </div>
+      <div class="col-sm-2 text-center mb-4">
+        </label>
+        <!-- Icon button -->
+        <button class="mdc-icon-button material-icons mdl-js-ripple-effect">file_copy</button>
+        <button class="mdc-icon-button material-icons color">file_copy</button>
+        <button id="add-to-favorites"
+           class="mdc-icon-button material-icons"
+           aria-label="Add to favorites"
+           aria-hidden="true"
+           aria-pressed="false"
+           data-toggle-on-content="favorite"
+           data-toggle-on-label="Remove from favorites"
+           data-toggle-off-content="favorite_border"
+           data-toggle-off-label="Add to favorites">favorite_border</button>
+      </div>
+      <div class="col-sm-1 text-center mb-4">
+        <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
+          <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input" checked>
+          <i class="mdl-icon-toggle__label material-icons">format_bold</i>
+        </label>
+        <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-2">
+          <input type="checkbox" id="icon-toggle-2" class="mdl-icon-toggle__input">
+          <i class="mdl-icon-toggle__label material-icons">format_italic</i>
+        </label>
+      </div>
+      <div class="col-sm-2 text-center mb-4">
+        <!-- Mini FAB button -->
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+          <i class="material-icons">share</i>
+        </button>
+        <!-- FAB button -->
+        <a class="mdl-button mdl-js-button mdl-button--fab">
+          <i class="material-icons">share</i></a>
+        <!-- Colored FAB button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+          <i class="material-icons">add</i>
+        </button>
+      </div>
+      <div class="col-sm-2 text-center mb-4">
+        <!-- Default Slider -->
+        <input class="mdl-slider mdl-js-slider" type="range"
+          min="0" max="100" value="25" tabindex="0">
+      </div>
+      <div class="col-sm-1 text-center mb-4">
+        <!-- MDL Spinner Component -->
+        <div class="mdl-spinner mdl-js-spinner is-active"></div>
+        <!-- MDL Spinner Component with Single Color -->
+        <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+
+<!-------------------- Table Material -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-10 justify-content-center mb-4 d-flex">
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+          <thead>
+            <tr>
+              <th class="mdl-data-table__cell--non-numeric tbl-col-width-1">Material</th>
+              <th class="tbl-col-width-2">Quantity</th>
+              <th class="tbl-col-width-3">Unit price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+              <td>25</td>
+              <td>$2.90</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+              <td>50</td>
+              <td>$1.25</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+              <td>10</td>
+              <td>$2.35</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- BS Table Bootstrap -------------------->
+    <div class="table-responsive mt-4">
+      <table class="table table-lightbackground table-border" style="z-index: -2;">
+        <thead>
+          <tr>
+            <!-- <th scope="col"></th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th> -->
+            <th class="table-main-header" scope="row" colspan="4">Wednesday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <p>11.30 - 12.15</p>
+            </th>
+            <td>
+              <p>Auto-awesome: advanced data science on Google Cloud Platform (featuring Ocado)</p>
+            </td>
+            <td>
+              <p>Auto-awesome: advanced data science on Google Cloud Platform (featuring Ocado)</p>
+            </td>
+            <td>
+              <p>Auto-awesome: advanced data science on Google Cloud Platform (featuring Ocado)</p>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="table-sub-header">Breakout 1:</td>
+            <td class="table-sub-header">Breakout 2:</td>
+            <td class="table-sub-header">Breakout 3:</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <p>11.30 - 12.15</p>
+            </th>
+            <td>
+              <p>Auto-awesome: advanced data science on Google Cloud Platform (featuring Ocado)</p>
+              <p class="mt-2 mb-4">Speaker: <a href="https://www.google.com" target="_blank">Angelina Googlina</a></p>
+              <a href="" class="btn btn-outline-primary btn-o-pr-1 btn-xs mb-2">Sign up for Session</a>
+            </td>
+            <td>
+              <p>Auto-awesome: advanced data science on Google Cloud Platform (featuring Ocado)</p>
+              <p class="mt-2 mb-4">Speaker: <a href="https://www.google.com" target="_blank">Angelina Googlina</a></p>
+              <a href="" class="btn btn-outline-primary btn-o-pr-1 btn-xs mb-2">Sign up for Session</a>
+            </td>
+            <td>
+              <p>Auto-awesome: advanced data science on Google Cloud Platform (featuring Ocado)</p>
+              <p class="mt-2 mb-4">Speaker: <a href="https://www.google.com" target="_blank">Angelina Googlina</a></p>
+              <a href="" class="btn btn-outline-primary btn-o-pr-1 btn-xs mb-2">Sign up for Session</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <p>11.30 - 12.15</p>
+            </th>
+            <td>
+              <p>Auto-awesome: advanced data science on Google Cloud Platform (featuring Ocado)</p>
+              <p class="mt-2 mb-4">Speaker: <a href="https://www.google.com" target="_blank">Angelina Googlina</a></p>
+              <a href="" class="btn btn-outline-primary btn-o-pr-1 btn-xs mb-2">Sign up for Session</a>
+            </td>
+            <td>
+              <p>Auto-awesome: advanced data science on Google Cloud Platform (featuring Ocado)</p>
+              <p class="mt-2 mb-4">Speaker: <a href="https://www.google.com" target="_blank">Angelina Googlina</a></p>
+              <a href="" class="btn btn-outline-primary btn-o-pr-1 btn-xs mb-2">Sign up for Session</a>
+            </td>
+            <td>
+              <p>Auto-awesome: advanced data science on Google Cloud Platform (featuring Ocado)</p>
+              <p class="mt-2 mb-4">Speaker: <a href="https://www.google.com" target="_blank">Angelina Googlina</a></p>
+              <a href="" class="btn btn-outline-primary btn-o-pr-1 btn-xs mb-2">Sign up for Session</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- xxx-------------------->
+
+    <div class="row justify-content-center">
+      <div class="col-sm-6 justify-content-center d-flex mb-4">
+        <ul class="demo-list-control mdl-list">
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              Bryan Cranston
+            </span>
+            <span class="mdl-list__item-secondary-action">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+              </label>
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons  mdl-list__item-avatar">person</i>
+              Aaron Paul
+            </span>
+            <span class="mdl-list__item-secondary-action">
+              <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+                <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked />
+              </label>
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons  mdl-list__item-avatar">person</i>
+              Bob Odenkirk
+            </span>
+            <span class="mdl-list__item-secondary-action">
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-1">
+                <input type="checkbox" id="list-switch-1" class="mdl-switch__input" checked />
+              </label>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6 justify-content-center d-flex mb-4">
+        <ul class="demo-list-two mdl-list">
+          <li class="mdl-list__item mdl-list__item--two-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Bryan Cranston</span>
+              <span class="mdl-list__item-sub-title">62 Episodes</span>
+            </span>
+            <span class="mdl-list__item-secondary-content">
+              <span class="mdl-list__item-secondary-info">Actor</span>
+              <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+            </span>
+          </li>
+          <li class="mdl-list__item mdl-list__item--two-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Aaron Paul</span>
+              <span class="mdl-list__item-sub-title">62 Episodes</span>
+            </span>
+            <span class="mdl-list__item-secondary-content">
+              <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+            </span>
+          </li>
+          <li class="mdl-list__item mdl-list__item--two-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Bob Odenkirk</span>
+              <span class="mdl-list__item-sub-title">62 Episodes</span>
+            </span>
+            <span class="mdl-list__item-secondary-content">
+              <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- xxx-------------------->
+
+    <div class="row text-center justify-content-center mt-5">
+      <div class="col-12 col-md-4 text-center my-4" id="testlink2">
+        <a href="https://www.google.com" class="hover-1 mx-4">hover-1a</a>
+        <a href="https://www.google.com" class="hover-1 mx-4">hover-1b</a>
+        <a href="https://www.google.com" class="hover-1 mx-4">hover-1c</a>
+      </div>
+      <div class="col-12 col-md-4 text-center my-4">
+        <a href="https://www.google.com" class="hover-2 mx-4">hover-2a</a>
+        <a href="https://www.google.com" class="hover-2 mx-4">hover-2b</a>
+        <a href="https://www.google.com" class="hover-2 mx-4">hover-2c</a>
+      </div>
+      <div class="col-12 col-md-4 text-center my-4">
+        <a href="https://www.google.com" class="hover-3 mx-4">hover-3a</a>
+        <a href="https://www.google.com" class="hover-3 mx-4 p-2">hover-3b</a>
+        <a href="https://www.google.com" class="hover-3 mx-4 p-2">hover-3c</a>
+      </div>
+      <div class="col-12 col-md-4 text-center my-4">
+        <a href="https://www.google.com" class="hover-4 mx-4">hover-4a</a>
+        <a href="https://www.google.com" class="hover-4 mx-4">hover-4b</a>
+        <a href="https://www.google.com" class="hover-4 mx-4">hover-4c</a>
+      </div>
+      <div class="col-12 col-md-4 text-center my-4">
+        <a href="https://www.google.com" class="hover-5 mx-4">hover-5a</a>
+        <a href="https://www.google.com" class="hover-5 mx-4">hover-5b</a>
+        <a href="https://www.google.com" class="hover-5 mx-4">hover-5c</a>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- Modals & Menu-------------------->
+
+      <div class="row text-center justify-content-center">
+        <div class="col-sm-3 text-center mb-4">
+          <!-- Button trigger modal -->
+          <a data-toggle="modal" data-target="#Modal_01" class="btn btn-outline-primary btn-o-pr-1">Modal</a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="Modal_01" tabindex="-1" role="dialog" aria-labelledby="Modal_01_Label" aria-hidden="true">
+            <!-- change 'modal-xxl' for size'; remove 'modal-dialog-centered' to show modal on top of page -->
+            <div class="modal-dialog modal-dialog-centered modal-xxl" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="Modal_01_Label">Modal title</h5>
+                  <button type="button" class="close modal-button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="material-icons">close</i></span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn modal-button" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn modal-button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-3 text-center mb-4">
+          <!-- Copy to clipboard -->
+          <a data-clipboard-text="fick dich" class="btn btn-outline-primary btn-o-pr-1 copy-to-clipboard">Copy to Clipboard</a>
+        </div>
+        <div class="col-sm-3 text-center mb-4">
+          <!-- Snackbar -->
+          <a class="btn btn-outline-primary btn-o-pr-1" onclick="mysnackbar()">Show Toast</a>
+          <div id="snackbar">Some text some message..</div>
+        </div>
+      </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section a</p><hr>
+
+<!-------------------- Tabs horizontal hover -------------------->
+
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <!-- <ul class="nav mb-3 justify-content-center" id="pillstab" role="tablist">
+          <li class="nav-item tabs">
+            <a class="nav-link py-3 active" id="tabno-1" data-toggle="pill" href="#aria-tabno-1" role="tab" aria-controls="aria-tabno-1" aria-selected="true">TabNo 1</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link hover-1 py-3" id="tabno-2" data-toggle="pill" href="#aria-tabno-2" role="tab" aria-controls="aria-tabno-2" aria-selected="false">TabNo 2</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link hover-bg py-3" id="tabno-3" data-toggle="pill" href="#aria-tabno-3" role="tab" aria-controls="aria-tabno-3" aria-selected="false">TabNo 3</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link hover-3 py-3" id="tabno-4" data-toggle="pill" href="#aria-tabno-4" role="tab" aria-controls="aria-tabno-4" aria-selected="false">TabNo 4</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link hover-3 py-3" id="tabno-5" data-toggle="pill" href="#aria-tabno-5" role="tab" aria-controls="aria-tabno-5" aria-selected="false">TabNo 5</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link hover-4 py-3" id="tabno-6" data-toggle="pill" href="#aria-tabno-6" role="tab" aria-controls="aria-tabno-6" aria-selected="false">TabNo 6</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link hover-5 py-3" id="tabno-7" data-toggle="pill" href="#aria-tabno-7" role="tab" aria-controls="aria-tabno-7" aria-selected="false">TabNo 7</a>
+          </li>
+        </ul> -->
+        <div class="tab-content" id="pillstabContent">
+          <div class="tab-pane fade show active" id="aria-tabno-1" role="tabpanel" aria-labelledby="tabno-1">test1</div>
+          <div class="tab-pane fade" id="aria-tabno-2" role="tabpanel" aria-labelledby="tabno-2">test22</div>
+          <div class="tab-pane fade" id="aria-tabno-3" role="tabpanel" aria-labelledby="tabno-3">test324</div>
+          <div class="tab-pane fade" id="aria-tabno-4" role="tabpanel" aria-labelledby="tabno-4">testwe324</div>
+          <div class="tab-pane fade" id="aria-tabno-5" role="tabpanel" aria-labelledby="tabno-5">test2wewewe32324</div>
+          <div class="tab-pane fade" id="aria-tabno-6" role="tabpanel" aria-labelledby="tabno-6">test223safsdf2324</div>
+          <div class="tab-pane fade" id="aria-tabno-7" role="tabpanel" aria-labelledby="tabno-7">test223ss2324</div>
+        </div>
+      </div>
+    </div>
+
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section a</p><hr>
+
+<!-------------------- Tabs horizontal content -------------------->
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 text-center mb-5" id="testlink3">
+        <ul class="nav mb-3 justify-content-center" id="pillstab01" role="tablist">
+
+          <li class="nav-item tabs">
+            <a class="nav-link nav-hover-3 nav-link-5items" id="tabno01" data-toggle="pill" href="#ariatabno01" role="tab" aria-controls="ariatabno01" aria-selected="false">Automation</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link nav-hover-3 nav-link-5items" id="tabno02" data-toggle="pill" href="#ariatabno02" role="tab" aria-controls="ariatabno02" aria-selected="false">Attribution</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link nav-hover-3 nav-link-5items" id="tabno03" data-toggle="pill" href="#ariatabno03" role="tab" aria-controls="ariatabno03" aria-selected="false">Audiences</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link nav-hover-3 nav-link-5items" id="tabno04" data-toggle="pill" href="#ariatabno04" role="tab" aria-controls="ariatabno04" aria-selected="false">Assets</a>
+          </li>
+          <li class="nav-item tabs">
+            <a class="nav-link nav-hover-3 nav-link-5items" id="tabno05" data-toggle="pill" href="#ariatabno05" role="tab" aria-controls="ariatabno05" aria-selected="false">Ads</a>
+          </li>
+        </ul>
+        <div class="tab-content py-5" id="pillstabContent01">
+
+            <div class="tab-pane fade show active" id="ariatabno01" role="tabpanel" aria-labelledby="tabno01">test1</div>
+            <div class="tab-pane fade" id="ariatabno02" role="tabpanel" aria-labelledby="tabno02">test22</div>
+            <div class="tab-pane fade" id="ariatabno03" role="tabpanel" aria-labelledby="tabno03">test324</div>
+            <div class="tab-pane fade" id="ariatabno04" role="tabpanel" aria-labelledby="tabno04">testwe324</div>
+            <div class="tab-pane fade" id="ariatabno05" role="tabpanel" aria-labelledby="tabno05">test2wewewe32324</div>
+        </div>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+ <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+      <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+      <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+      <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+  </div>
+
+  <div class="mdl-tabs__panel is-active" id="starks-panel">
+    <ul>
+      <li>Eddard</li>
+      <li>Catelyn</li>
+      <li>Robb</li>
+      <li>Sansa</li>
+      <li>Brandon</li>
+      <li>Arya</li>
+      <li>Rickon</li>
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="lannisters-panel">
+    <ul>
+      <li>Tywin</li>
+      <li>Cersei</li>
+      <li>Jamie</li>
+      <li>Tyrion</li>
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="targaryens-panel">
+    <ul>
+      <li>Viserys</li>
+      <li>Daenerys</li>
+    </ul>
+  </div>
+</div>
+
+<!-------------------- Tabs vertical -------------------->
+
+    <!-- <div class="row">
+      <div class="col-sm-4 col-md-3 col-xl-2 text-left">
+          <li class="nav-item left-tabs">
+            <a class="nav-link hover-bg active" id="left-tabsno-1" data-toggle="pill" href="#aria-left-tabsno-1" role="tab" aria-controls="aria-left-tabsno-1" aria-selected="true">TabNo 1</a>
+          </li>
+          <li class="nav-item left-tabs">
+            <a class="nav-link hover-bg" id="left-tabsno-2" data-toggle="pill" href="#aria-left-tabsno-2" role="tab" aria-controls="aria-left-tabsno-2" aria-selected="false">TabNo 2</a>
+          </li>
+          <li class="nav-item left-tabs">
+            <a class="nav-link hover-bg" id="left-tabsno-3" data-toggle="pill" href="#aria-left-tabsno-3" role="tab" aria-controls="aria-left-tabsno-3" aria-selected="false">TabNo 3</a>
+          </li>
+          <li class="nav-item left-tabs">
+            <a class="nav-link hover-bg" id="left-tabsno-4" data-toggle="pill" href="#aria-left-tabsno-4" role="tab" aria-controls="aria-left-tabsno-4" aria-selected="false">TabNo 4</a>
+          </li>
+          <li class="nav-item left-tabs">
+            <a class="nav-link hover-bg" id="left-tabsno-5" data-toggle="pill" href="#aria-left-tabsno-5" role="tab" aria-controls="aria-left-tabsno-5" aria-selected="false">TabNo 5</a>
+          </li>
+          <li class="nav-item left-tabs">
+            <a class="nav-link hover-bg py-3" id="left-tabsno-6" data-toggle="pill" href="#aria-left-tabsno-6" role="tab" aria-controls="aria-left-tabsno-6" aria-selected="false">TabNo 6</a>
+          </li>
+          <li class="nav-item left-tabs">
+            <a class="nav-link hover-bg py-3" id="left-tabsno-7" data-toggle="pill" href="#aria-left-tabsno-7" role="tab" aria-controls="aria-left-tabsno-7" aria-selected="false">TabNo 7</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-8 col-md-9 col-xl-10 text-left mt-2">
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="aria-left-tabsno-1" role="tabpanel" aria-labelledby="left-tabsno-1">test1</div>
+          <div class="tab-pane fade" id="aria-left-tabsno-2" role="tabpanel" aria-labelledby="left-tabsno-2">test22</div>
+          <div class="tab-pane fade" id="aria-left-tabsno-3" role="tabpanel" aria-labelledby="left-tabsno-3">test324</div>
+          <div class="tab-pane fade" id="aria-left-tabsno-4" role="tabpanel" aria-labelledby="left-tabsno-4">testwe324</div>
+          <div class="tab-pane fade" id="aria-left-tabsno-5" role="tabpanel" aria-labelledby="left-tabsno-5">test2wewewe32324</div>
+          <div class="tab-pane fade" id="aria-left-tabsno-6" role="tabpanel" aria-labelledby="left-tabsno-6">test223safsdf2324</div>
+          <div class="tab-pane fade" id="aria-left-tabsno-7" role="tabpanel" aria-labelledby="left-tabsno-7">test223ss2324</div>
+        </div>
+      </div>
+    </div> -->
+
+<!---------------------------- end ---------------------------->
+
+
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section a</p><hr>
+
+    <div class="row text-center" style="height: 300px;">
+      <!-- Swiper -->
+      <div class="swiper-container swiper1">
+        <div class="swiper-wrapper d-flex my-auto">
+          <div class="swiper-slide">Slide 1</div>
+          <!-- <div class="swiper-slide"><img src="images/jpg/wp01.jpg" class="img-fluid"></div>
+           <div class="swiper-slide"><img src="images/jpg/wp02.jpg" class="img-fluid"></div> -->
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination1"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-next1"></div>
+        <div class="swiper-button-prev swiper-button-prev1"></div>
+        <!-- Add Scrollbar -->
+        <!-- <div class="swiper-scrollbar swiper-scrollbar1"></div> -->
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section b</p><hr>
+
+    <div class="row text-center" style="height: 300px;">
+      <!-- Swiper -->
+      <div class="swiper-container swiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/jpg/wp01.jpg" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="images/jpg/wp02.jpg" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="images/jpg/wp03.jpg" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="images/jpg/wp04.jpg" class="img-fluid"></div>
+        </div>
+         <!-- Add Pagination -->
+         <div class="swiper-pagination swiper-pagination2"></div>
+         <!-- Add Arrows -->
+         <div class="swiper-button-next swiper-button-next2"></div>
+         <div class="swiper-button-prev swiper-button-prev2"></div>
+         <!-- Add Scrollbar -->
+         <div class="swiper-scrollbar swiper-scrollbar2"></div>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section c</p><hr>
+
+    <div class="row text-center" style="height: 300px;">
+      <!-- Swiper -->
+      <div class="swiper-container swiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/jpg/wp01.jpg" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="images/jpg/wp02.jpg" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="images/jpg/wp03.jpg" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="images/jpg/wp04.jpg" class="img-fluid"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination3"></div>
+         <!-- Add Arrows -->
+         <div class="swiper-button-next swiper-button-next3"></div>
+         <div class="swiper-button-prev swiper-button-prev3"></div>
+         <!-- Add Scrollbar -->
+         <div class="swiper-scrollbar swiper-scrollbar3"></div>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xX</p><hr>
+
+<!-------------------- FAQ 1 rows -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-12 my-4">
+        <!-- <img class="icon-small" src="images/svg/light-bulb.svg" alt=""> -->
+        <h1>FAQ</h1>
+        <p class="w-700px mx-auto">Answers to your most frequent questions</p>
+      </div>
+
+      <div class="col-12 col-lg-10 col-xl-8 text-left mb-p-l my-p">
+        <h5>Question 1</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+        <h5>Question 2</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+        <h5>Question 3</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+      </div>
+      <div class="my-4"></div>
+    </div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section last</p><hr>
+
+<!-------------------- FAQ 2 rows -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-12 my-4">
+        <!-- <img class="icon-small" src="images/svg/light-bulb.svg" alt=""> -->
+        <h1>FAQ</h1>
+        <p class="w-700px mx-auto">Answers to your most frequent questions</p>
+      </div>
+
+      <div class="col-12 col-lg-6 text-left pr-lg-3 pr-xl-5 mb-p-l my-p">
+        <h5>Question 1</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+        <h5>Question 2</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+        <h5>Question 3</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+      </div>
+
+      <div class="col-12 col-lg-6 text-left pl-lg-3 pl-xl-5 mb-p-l my-p">
+        <h5>Question 4</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+        <h5>Question 5</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+        <h5>Question 6</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+      </div>
+    </div>
+    <div class="my-4"></div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section last</p><hr>
+
+<!-------------------- FAQ 3 rows -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-12 my-4">
+        <!-- <img class="icon-small" src="images/svg/light-bulb.svg" alt=""> -->
+        <h1>FAQ</h1>
+        <p class="w-700px mx-auto">Answers to your most frequent questions</p>
+      </div>
+
+      <div class="col-12 col-lg-10 col-xl-4 text-left pr-xl-5 mb-p-l my-p">
+        <h5>Question 1</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+        <h5>Question 2</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+      </div>
+
+      <div class="col-12 col-lg-10 col-xl-4 text-left pl-xl-3 pr-xl-3 mb-p-l my-p">
+        <h5>Question 3</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+        <h5>Question 4</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+      </div>
+
+      <div class="col-12 col-lg-10 col-xl-4 text-left pl-xl-5 mb-p-l my-p">
+        <h5>Question 5</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+        <h5>Question 6</h5>
+        <p>
+          Sector POCs are in the lead of driving audience adoption in their respective teams by sharing reports, briefing AMs & Managers, and following up on progress of pitch & implementations.
+        </p>
+      </div>
+    </div>
+    <div class="my-4"></div>
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section last</p><hr>
+
+<!-------------------- SECTION speakers -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-12 my-4">
+        <!-- <img class="icon-small" src="images/svg/light-bulb.svg" alt=""> -->
+        <h1>Speakers</h1>
+        <p class="w-700px mx-auto">These are the speakers text fill</p>
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+      <div class="col-6 col-md-4 col-lg-3 mb-5">
+        <img class="icon-xl-large rounded-circle circle-pic" src="https://avatarfiles.alphacoders.com/880/88081.jpg" alt="">
+        <h5><a href="https://www.google.com" target="_blank">Angelina Googlina</a></h5>
+        <p>Head of Search, LCS DACH<p>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-5">
+        <img class="icon-xl-large rounded-circle circle-pic" src="https://avatarfiles.alphacoders.com/880/88081.jpg" alt="">
+        <h5><a href="https://www.google.com" target="_blank">Angelina Googlina</a></h5>
+        <p>Head of Search, LCS DACH<p>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-5">
+        <img class="icon-xl-large rounded-circle circle-pic" src="https://avatarfiles.alphacoders.com/880/88081.jpg" alt="">
+        <h5><a href="https://www.google.com" target="_blank">Angelina Googlina</a></h5>
+        <p>Head of Search, LCS DACH<p>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-5">
+        <img class="icon-xl-large rounded-circle circle-pic" src="https://avatarfiles.alphacoders.com/880/88081.jpg" alt="">
+        <h5><a href="https://www.google.com" target="_blank">Angelina Googlina</a></h5>
+        <p>Head of Search, LCS DACH<p>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-5">
+        <img class="icon-xl-large rounded-circle circle-pic" src="https://avatarfiles.alphacoders.com/880/88081.jpg" alt="">
+        <h5><a href="https://www.google.com" target="_blank">Angelina Googlina</a></h5>
+        <p>Head of Search, LCS DACH<p>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-5">
+        <img class="icon-xl-large rounded-circle circle-pic" src="https://avatarfiles.alphacoders.com/880/88081.jpg" alt="">
+        <h5><a href="https://www.google.com" target="_blank">Angelina Googlina</a></h5>
+        <p>Head of Search, LCS DACH<p>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-5">
+        <img class="icon-xl-large rounded-circle circle-pic" src="https://avatarfiles.alphacoders.com/880/88081.jpg" alt="">
+        <h5><a href="https://www.google.com" target="_blank">Angelina Googlina</a></h5>
+        <p>Head of Search, LCS DACH<p>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-5">
+        <img class="icon-xl-large rounded-circle circle-pic" src="https://avatarfiles.alphacoders.com/880/88081.jpg" alt="">
+        <h5><a href="https://www.google.com" target="_blank">Angelina Googlina</a></h5>
+        <p>Head of Search, LCS DACH<p>
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section last</p><hr>
+
+<!-------------------- Cards -------------------->
+
+    <div class="row justify-content-center">
+
+      <!-- Card Hover IMG -->
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
+        <div class="card shadow-hard hover-img-dark hover-shadow-hard" style="width: 100%">
+          <!-- optional header -->
+          <h5 class="card-header d-flex justify-content-center align-items-center">Featured</h5>
+          <!-- optional img on top -->
+          <div class="dark-layer" style="height: 200px; overflow: hidden;">
+            <img class="card-img-top img-fluid" src="images/jpg/pic07.jpg" alt="Card image cap">
+            <div class='text-overlay'>Tech Specs Hover 45</div>
+            <!-- <div class='icon-overlay'>Wurstauge</div> -->
+             <button class="icon-overlay mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+               <i class="material-icons">share</i>
+             </button>
+          </div>
+          <!-- main text -->
+          <div class="card-body" style="height: 250px;">
+            <div class="d-flex align-items-center">
+              <h5 class="card-title">Card title</h5>
+              <div class="text-muted ml-auto">
+                <button class="mdc-icon-button material-icons color">file_copy</button>
+                <button class="mdc-icon-button material-icons color">file_copyr</button>
+              </div>
+            </div>
+
+            <p class="card-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content</p>
+            <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <small class="text-muted">blub</small>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+              <div class="text-muted ml-auto">
+                <!-- <button class="mdc-icon-button material-icons">favorite</button>
+                <button class="mdc-icon-button material-icons">favorite</button>
+                <button class="mdc-icon-button material-icons">favorite</button> -->
+                <button id="add-to-favorites"
+                   class="mdc-icon-button material-icons"
+                   aria-label="Add to favorites"
+                   aria-hidden="true"
+                   aria-pressed="false"
+                   data-toggle-on-content="favorite"
+                   data-toggle-on-label="Remove from favorites"
+                   data-toggle-off-content="favorite_border"
+                   data-toggle-off-label="Add to favorites">favorite_border</button>
+
+               <button id="add-to-favorites2"
+                  class="mdc-icon-button material-icons"
+                  aria-label="Add to favorites"
+                  aria-hidden="true"
+                  aria-pressed="false"
+                  data-toggle-on-content="favorite"
+                  data-toggle-on-label="Remove from favorites"
+                  data-toggle-off-content="favorite_border"
+                  data-toggle-off-label="Add to favorites">favorites_border</button>
+              </div>
+              <button class="mdc-icon-button material-icons">file_copy_border</button>
+
+            </div>
+          </div>
+          <!-- optional footer -->
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Card Hover Card -->
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
+        <div class="card shadow-hard hover-img-dark hover-shadow-hard" style="width: 100%">
+          <!-- optional header -->
+          <h5 class="card-header d-flex justify-content-center align-items-center">Featured</h5>
+          <!-- optional img on top -->
+          <div class="dark-soft-layer" style="height: 100%; overflow: hidden;">
+            <div style="height: 200px; overflow:hidden">
+              <img class="card-img-top img-fluid" src="images/jpg/pic07.jpg" alt="Card image cap">
+              <div class='text-overlay' style="top: 100px;">Tech Specs Hover 45</div> <!-- must be half of div height above -->
+              <!-- <div class='icon-overlay'>Wurstauge</div> -->
+               <button class="icon-overlay mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                 <i class="material-icons">share</i>
+               </button>
+            </div>
+          <!-- main text -->
+          <div class="card-body" style="height: 250px;">
+            <h5 class="card-title">Card title</h5>
+
+            <p class="card-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content</p>
+            <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn btn-primary z-index-2">Go somewhere</a>
+                  <small class="text-muted">blub</small>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <a href="#" class="card-link z-index-2">Card link</a>
+              <a href="#" class="card-link z-index-2">Another link</a>
+              <small class="text-muted ml-auto">blub</small>
+            </div>
+          </div>
+        </div>
+          <!-- optional footer -->
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
+        <div class="card shadow-hard hover-img-dark hover-shadow-hard" style="width: 100%">
+          <!-- optional header -->
+          <h5 class="card-header d-flex justify-content-center align-items-center">Featured</h5>
+          <!-- optional img on top -->
+          <div class="dark-layer" style="height: 200px; overflow: hidden;">
+            <img class="card-img-top img-fluid" src="images/jpg/pic07.jpg" alt="Card image cap">
+            <div class='text-overlay'>Tech Specs Hover 45</div>
+            <!-- <div class='icon-overlay'>Wurstauge</div> -->
+             <button class="icon-overlay mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+               <i class="material-icons">share</i>
+             </button>
+          </div>
+          <!-- main text -->
+          <div class="card-body" style="height: 250px;">
+            <h5 class="card-title">Card title</h5>
+
+            <p class="card-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content</p>
+            <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <small class="text-muted">blub</small>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+              <small class="text-muted ml-auto">blub</small>
+            </div>
+          </div>
+          <!-- optional footer -->
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row justify-content-center">
+
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-xl-4 mb-5 d-flex justify-content-center">
+        <div class="card card-width border-none shadow-very-hard hover hover-img-dark" style="width: 100%">
+          <!-- optional header -->
+          <h5 class="card-header d-flex align-items-center">
+            <i class="material-icons pr-3 white">people</i>
+            Affinity Audiences on Search</h5>
+          <!-- optional img on top -->
+          <div class="dark-soft-layer">
+            <img class="card-img-top img-fluid" src="images/ficker1.svg" alt="Card image cap">
+
+          <!-- main text -->
+            <div class="card-body">
+              <p class="card-text mb-1">DSA help you reach users who are searching for your products and services without the need for you to actively manage keywords or ads.</p>
+            </div>
+          </div>
+          <div class="card-body mt-2 mb-3" style="height: 100px;">
+            <div class="d-flex align-items-center">
+              <a class="mdc-button mdc-button--raised white myripple" data-toggle="modal" data-target="#Modal_card_01">
+                <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
+                Show more</a>
+              <div class="text-muted ml-auto card-icons-3">
+                <button class="mdc-icon-button material-icons" id="get_app_hover">get_app</button>
+                <div class="mdl-tooltip" for="get_app_hover">Download PDF</div>
+                <button class="mdc-icon-button material-icons" id="link_hover">link</button>
+                <div class="mdl-tooltip" for="link_hover">Copy Link</div>
+                <button class="mdc-icon-button material-icons" id="bookmark_border_hover">bookmark_border</button>
+                <div class="mdl-tooltip" for="bookmark_border_hover">Bookmark</div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="Modal_card_01" tabindex="-1" role="dialog" aria-labelledby="Modal_01_Label" aria-hidden="true">
+                <!-- change 'modal-xxl' for size'; remove 'modal-dialog-centered' to show modal on top of page -->
+                <div class="modal-dialog modal-dialog-centered modal-xxl" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header d-flex align-items-center">
+                      <div class="modal-title text-muted card-icons-3" id="Modal_01_Label">
+                          <button class="mdc-icon-button material-icons mx-3" id="get_app_hover1">get_app</button>
+                          <button class="mdc-icon-button material-icons mx-3" id="link_hover1">link</button>
+                          <button class="mdc-icon-button material-icons mx-3" id="bookmark_border_hover1">bookmark_border</button>
+                        </div>
+                      <button type="button" class="close modal-button d-flex align-items-center" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="material-icons">close</i></span>
+                      </button>
+                    </div>
+                    <div class="modal-body modal-picture">
+                      <img class="img-fluid" src="images/text_fucker.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- optional footer -->
+          <div class="card-footer">
+            <div class="d-flex align-items-center">
+              <p class="light-grey p-xs">Author: <span><a href="">thilos@</a></span></p>
+              <div class="ml-auto">
+                <p class="light-grey p-xs">Last updated: 27 June 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-md-6 col-xl-4 mb-5 d-flex justify-content-center">
+        <div class="card card-width border-none shadow-very-hard hover hover-img-dark" style="width: 100%">
+          <!-- optional header -->
+          <h5 class="card-header d-flex align-items-center">
+            <i class="material-icons pr-3 white">dvr</i>
+            Affinity Audiences on Search</h5>
+          <!-- optional img on top -->
+          <div class="dark-soft-layer">
+            <img class="card-img-top img-fluid" src="images/main_header.svg" alt="Card image cap">
+
+          <!-- main text -->
+            <div class="card-body">
+              <p class="card-text mb-1">DSA help you reach users who are searching for your products and services without the need for you to actively manage keywords or ads.</p>
+            </div>
+          </div>
+          <div class="card-body mt-2 mb-3" style="height: 100px;">
+            <div class="d-flex align-items-center">
+              <a class="mdc-button mdc-button--raised white myripple">
+                <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
+                Show more
+              </a>
+              <div class="text-muted ml-auto card-icons-3">
+                <button class="mdc-icon-button material-icons grey">get_app</button>
+                <button class="mdc-icon-button material-icons grey">link</button>
+                <button class="mdc-icon-button material-icons grey">bookmark_border</button>
+              </div>
+            </div>
+          </div>
+          <!-- optional footer -->
+          <div class="card-footer">
+            <div class="d-flex align-items-center">
+              <p class="light-grey p-xs">Author: <span><a href="">thilos@</a></span></p>
+              <div class="ml-auto">
+                <p class="light-grey p-xs">Last updated: 27 June 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-md-6 col-xl-4 mb-5 d-flex justify-content-center">
+        <div class="card card-width border-none shadow-very-hard hover hover-img-dark" style="width: 100%">
+          <!-- optional header -->
+          <h5 class="card-header d-flex align-items-center">
+            <i class="material-icons pr-3 white">mobile_friendly</i>
+            Affinity Audiences on Search</h5>
+          <!-- optional img on top -->
+          <div class="dark-soft-layer">
+            <img class="card-img-top img-fluid" src="images/ficker2.svg" alt="Card image cap">
+
+          <!-- main text -->
+            <div class="card-body">
+              <p class="card-text mb-1">DSA help you reach users who are searching for your products and services without the need for you to actively manage keywords or ads.</p>
+            </div>
+          </div>
+          <div class="card-body mt-2 mb-3" style="height: 100px;">
+            <div class="d-flex align-items-center">
+              <a class="mdc-button mdc-button--raised white myripple">
+                <i class="material-icons mdc-button__icon white" aria-hidden="true">open_in_new</i>
+                Show more
+              </a>
+              <div class="text-muted ml-auto card-icons-3">
+                <button class="mdc-icon-button material-icons grey">get_app</button>
+                <button class="mdc-icon-button material-icons grey">link</button>
+                <button class="mdc-icon-button material-icons grey">bookmark_border</button>
+              </div>
+            </div>
+          </div>
+          <!-- optional footer -->
+          <div class="card-footer">
+            <div class="d-flex align-items-center">
+              <p class="light-grey p-xs">Author: <span><a href="">thilos@</a></span></p>
+              <div class="ml-auto">
+                <p class="light-grey p-xs">Last updated: 27 June 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section last</p><hr>
+
+<!-------------------- SECTION TEMPLATE -------------------->
+
+   <div class="row text-center">
+     <div class="col-12 d-flex flex-row">
+       <div class="box_200_150 m-3 shadow-very-hard border-none">box 1</div>
+       <div class="box_200_150 m-3 shadow-hard border-none">box 2</div>
+       <div class="box_200_150 m-3 shadow-very-soft">box 3</div>
+       <div class="box_200_150 m-3 shadow-soft border-none">box 4</div>
+     </div>
+    <div class="col-12 d-flex flex-row">
+      <div class="box_200_150 m-3 shadow-very-hard hover border-none">box 1 (hover)</div>
+      <div class="box_200_150 m-3 shadow-hard hover border-none">box 2 (hover)</div>
+      <div class="box_200_150 m-3 shadow-very-soft hover">box 3 (hover pixel)</div>
+      <div class="box_200_150 m-3 shadow-soft border-none hover">box 4 (hover pixel)</div>
+    </div>
+    <div class="col-12 d-flex flex-row">
+      <div class="box_200_150 m-3">box 5</div> <!-- or dark-layer -->
+      <div class="box_200_150 m-3 dark-soft-layer">box 5 (hover grey)</div> <!-- or dark-layer -->
+      <div class="box_200_150 m-3 hover-border">box 5 (hover frame)</div>
+      <div class="box_200_150 m-3 hover-border" style="border-width: 4px;">box 5 (hover frame fat)</div>
+    </div>
+    <div class="col-12 d-flex flex-row">
+      <div class="box_200_150 m-3 hover-shadow-very-hard">box 5 (hover)</div>
+      <div class="box_200_150 m-3 hover-shadow-hard">box 5 (hover)</div>
+      <div class="box_200_150 m-3 hover-shadow-very-soft">box 5 (hover)</div>
+      <div class="box_200_150 m-3 hover-shadow-pixel">box 5 (hover pixel)</div>
+    </div>
+   </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section last</p><hr>
+
+<!-------------------- SECTION TEMPLATE -------------------->
+
+
+
+<!---------------------------- end BEFORE FOOTER ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- SECTION TEMPLATE -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-2 text-center mb-4">
+
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- SECTION TEMPLATE -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-2 text-center mb-4">
+
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- SECTION TEMPLATE -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-2 text-center mb-4">
+
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- SECTION TEMPLATE -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-2 text-center mb-4">
+
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+<p style="margin-bottom: -20px; margin-top: 20px;">Section xXe</p><hr>
+
+<!-------------------- SECTION TEMPLATE -------------------->
+
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-2 text-center mb-4">
+
+      </div>
+    </div>
+
+<!---------------------------- end ---------------------------->
+
+
+     <div class="row" style="height: 300px;">
+       <div class="col-8 mt-5 text-center justify-content-center">
+         <button class="mdc-button mdc-button--raised m-5 myripple">Button 1</button>
+         <button class="mdc-button mdc-button--raised m-5 myripple">Button 2</button>
+       </div>
+     </div>
+<!---------------------------- end ---------------------------->
+
+
+</div> <!-- CLOSES MAIN BODY CONTAINER  -->
+
+<!-- Full width color background -->
+<div class="bg-fill" style="height: 300px;">
+  <div class="container h-100">
+    <div class="row d-flex align-items-center h-100">
+      <div class="col-12 white text-center">
+        <h1>One-Sheeter Hub</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- small footer -->
+<div class="bg-fill footer">
+  <div class="container">
+    <div class="row d-flex align-items-center h-100">
+      <div class="col-12 col-md-auto">
+        <img class="d-flex justify-content-start" src="images/svg/Google_white.svg" width="" height="32" alt="">
+      </div>
+      <div class="col-12 col-sm-auto d-flex white text-left">
+        <a href="" target="_blank" class="ml-0 pl-0 ml-md-3">Privacy</a>
+        <a href="" target="_blank">Terms</a>
+        <a href="" target="_blank">About Google</a>
+      </div>
+      <div class="col-12 col-sm-auto ml-auto d-flex white">
+        <a href="" target="_blank" class="ml-0 pl-0">Privacy</a>
+        <a href="" target="_blank">Terms</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Simple header with scrollable tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#scroll-tab-a" class="mdl-layout__tab is-active">Tab 1</a>
+      <a href="#scroll-tab-b" class="mdl-layout__tab">Tab 2</a>
+      <a href="#scroll-tab-c" class="mdl-layout__tab">Tab 3</a>
+      <a href="#scroll-tab-d" class="mdl-layout__tab">Tab 4</a>
+      <a href="#scroll-tab-e" class="mdl-layout__tab">Tab 5</a>
+      <a href="#scroll-tab-f" class="mdl-layout__tab">Tab 6</a>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+  </div>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-a">
+      <div class="page-content">2</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-b">
+      <div class="page-content">3</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-c">
+      <div class="page-content">4</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-d">
+      <div class="page-content">5</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-e">
+      <div class="page-content">6</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-f">
+      <div class="page-content">1</div>
+    </section>
+  </main>
+</div>
+
+<!-- JS -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <!-- Material JS -->
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!-- Fade CDN -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <!-- Slick slider CDN -->
+  <script src="js/swiper/swiper.min.js"></script>
+
+  <!-- copy to clipboard CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+  <!-- My Files CDN LOCAL -->
+  <script src="js/scroll/smooth-scroll.min.js"></script>
+  <script src="js/scroll/smooth-scroll.polyfills.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>mdc.autoInit()</script>
+  <!-- <script>AOS.init({duration: 1000, once: false, offset: 50})</script> -->
+
+
+</body>
+</html>
