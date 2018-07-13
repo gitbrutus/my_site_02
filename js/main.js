@@ -21,6 +21,12 @@ var scroll = new SmoothScroll('a[href*="#_scroll"]', {
   easing: 'easeInOutCubic',
 });
 
+$("#top").click(function() {
+  $("html, body").animate({ scrollTop: 100 }, "slow");
+  return false;
+});
+
+
 function topFunction() {
     document.body.scrollTop = 1;
     document.documentElement.scrollTop = 1;
