@@ -474,9 +474,6 @@
 	.navigation_text {
 		display: none;
 	}
-	.mdc-top-app-bar__navigation-icon {
-		display: none;
-	}
 }
 
 @media (min-width: 768px) {
@@ -760,7 +757,11 @@ a:hover {
 }
 
 .mb-p-xl > p {
-	margin-bottom: 50px;
+	margin-bottom: 60px;
+}
+
+.mb-p-xxl > p {
+	margin-bottom: 80px;
 }
 
 .py-100 {
@@ -787,6 +788,9 @@ a:hover {
 	}
 	.mb-p-xl > p {
 		margin-bottom: 40px;
+	}
+	.mb-p-xxl > p {
+		margin-bottom: 50px;
 	}
 }
 

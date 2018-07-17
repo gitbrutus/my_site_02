@@ -79,7 +79,8 @@ a {
 .my-p > p { margin: 16px 0; }
 .mb-p > p { margin-bottom: 30px; }
 .mb-p-l > p { margin-bottom: 40px; }
-.mb-p-xl > p { margin-bottom: 50px; }
+.mb-p-xl > p { margin-bottom: 60px; }
+.mb-p-xxl > p { margin-bottom: 80px; }
 .py-100 { padding: 100px 0px; }
 
 .p-minus-15 {
@@ -95,6 +96,7 @@ a {
   .mb-p > p { margin-bottom: 20px; }
   .mb-p-l > p { margin-bottom: 30px; }
   .mb-p-xl > p { margin-bottom: 40px; }
+  .mb-p-xxl > p { margin-bottom: 50px; }
 }
 
 /* mobile font adjustment */
