@@ -75,6 +75,18 @@ a {
   overflow: hidden;
 }
 
+.d-none-mobile {
+  @media (max-width: 575px) {
+    display: none !important;
+  }
+}
+
+.d-none-desktop {
+  @media (min-width: 576px) {
+    display: none !important;
+  }
+}
+
 .mb-h1 { margin-bottom: 20px; }
 .p-xs { font-size: 0.875rem !important; }
 .media-body { margin-bottom: 12px;}
