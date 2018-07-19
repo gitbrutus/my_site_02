@@ -121,23 +121,23 @@ a {
   h6 { font-size: 18px; }
   .display-3 { font-size: 52px;}
   .display-4 { font-size: 46px; }
-  .container-margin { margin-top: 40px }
+  .container-margin { margin-top: 40px; }
 }
 
 @media (min-width: 992px) {
   h1 { font-size: 36px; }
   h5 { font-size: 20px; }
   h6 { font-size: 18px; }
-  .container-margin { margin-top: 60px }
+  .container-margin { margin-top: 60px; }
 }
 
 @media (min-width: 1360px) {
   .container { max-width: 1280px; }
-  .container-margin { margin-top: 80px }
+  .container-margin { margin-top: 80px; }
 }
 @media (min-width: 1540px) {
   .container { max-width: 1440px; }
-  .container-margin { margin-top: 100px }
+  .container-margin { margin-top: 100px; }
 }
 
 // @media (min-width: 1900px) {.container { max-width: 1600px; }}
