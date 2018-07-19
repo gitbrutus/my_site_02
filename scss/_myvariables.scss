@@ -40,6 +40,7 @@ $lineheight_text: 24px;
   & h1, h2, h3, h4, h5, h6 { color: white !important; };
 }
 .color { color: $color_main !important; }
+.opacity { opacity: 0.5 }
 .grey { color: $text_grey !important;}
 .light-grey { color: $text_grey_light !important;}
 
@@ -76,13 +77,19 @@ $nav_hover_line_distance: 12px;
 // $navtext_color:         white;
 
 // navbar white  - comment out 'navbar transparent'
-$navbar_color:          $color_main;
-$navtext_color:         white;
-$navbar_color_scroll:   white;
-$navtext_color_scroll:  $text_grey_light;
+$navbar_color:                    $color_main;
+$navbar_color_scroll:             white;
+
+$navtext_color:                   white;
+$navtext_color_scroll:            $text_grey;
+
+$navtext_activated_color:         white;
+$navtext_activated_color_scroll:  $color_main;
 
 
 // Hover, Borders & Shadows --------------------
+$a_hover: #3367d6;
+
 $hover_line_width: 2px;
 $hover_line_distance: 6px;
 

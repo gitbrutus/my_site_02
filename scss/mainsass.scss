@@ -57,11 +57,13 @@ a {
   text-decoration: none !important;
   transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
   &:hover {
-    color: $color_main_darker;
+    color: $a_hover;
   }
 }
 
-
+.border-bottom {
+  border-bottom: 1px solid $line_grey;
+}
 
 .height-400px {
   max-height: 400px;
@@ -101,9 +103,9 @@ a {
 
 /* mobile font adjustment */
 @media (max-width: 575px) {
-  h1 { font-size: 24px; }
-  h2 { font-size: 22px; }
-  h3 { font-size: 21px; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 22px; }
   h4 { font-size: 20px; }
   .display-3 { font-size: 42px; }
   .display-4 { font-size: 36px; }
@@ -115,16 +117,29 @@ a {
   h2 { font-size: 26px; }
   h3 { font-size: 24px; }
   h4 { font-size: 22px; }
+  h5 { font-size: 20px; }
+  h6 { font-size: 18px; }
   .display-3 { font-size: 52px;}
   .display-4 { font-size: 46px; }
+  .container-margin { margin-top: 40px }
 }
 
 @media (min-width: 992px) {
   h1 { font-size: 36px; }
+  h5 { font-size: 20px; }
+  h6 { font-size: 18px; }
+  .container-margin { margin-top: 60px }
 }
 
-@media (min-width: 1360px) {.container { max-width: 1280px; }}
-@media (min-width: 1540px) {.container { max-width: 1440px; }}
+@media (min-width: 1360px) {
+  .container { max-width: 1280px; }
+  .container-margin { margin-top: 80px }
+}
+@media (min-width: 1540px) {
+  .container { max-width: 1440px; }
+  .container-margin { margin-top: 100px }
+}
+
 // @media (min-width: 1900px) {.container { max-width: 1600px; }}
 @media (max-width: 767px) {.container-fluid {padding: 0px 0px !important;}}
 
@@ -165,10 +180,6 @@ a {
   margin-top: 0px;
   padding-top: 40px;
   padding-bottom: 30px;
-}
-
-@media (max-width: 575px) {
-  .bg { padding-top: 70px; }
 }
 
 /*bg option 1*/
@@ -586,13 +597,12 @@ a {
 }
 
 .icon-medium {
-  width: 42px;
   height: 42px;
   margin-bottom: 15px;
 }
 
 .icon-large, .icon-x-large {
-  width: 62px;
+  height: 62px;
   margin-bottom: 20px;
 }
 
@@ -651,7 +661,7 @@ a {
   }
   & a {
     color: white !important;
-    margin: 4px 8px;
+    margin: 4px 16px;
     padding: 4px;
     &:last-of-type {
       margin-right: 0px;
@@ -681,6 +691,7 @@ a {
 
 .modal-header {
   border-bottom: none;
+  height: 60px;
 }
 
 .modal-content  {
@@ -706,23 +717,34 @@ a {
   border: 2px solid white !important;
 }
 
+.modal-pdf {
+  padding: 0px !important;
+  border: 2px solid white !important;
+  height: 90vh;
+}
+
+.pdf-a4 {
+  width: 100%;
+  height: 100%;
+}
 
 
 /* add to class with 'modal-dialog'*/
 @media (min-width: 576px) {
-  .modal-sm { max-width: 300px; }}
+  .modal-sm, .modal-lg, .modal-xl, .modal-xxl { min-width: 90vw; }}
 
 @media (min-width: 992px) {
-  .modal-lg { max-width: 800px; }}
+  .modal-lg, .modal-xl, .modal-xxl { min-width: 800px; }}
 
 @media (min-width: 1200px) {
-  .modal-xl { max-width: 1000px; }}
+  .modal-xl, .modal-xxl { min-width: 1000px; }}
 
 @media (min-width: 1360px) {
-  .modal-xxl { max-width: 1280px; }}
+  .modal-xxl { min-width: 1280px; }}
 
 @media (min-width: 1540px) {
-  .modal-xxl { max-width: 1480px; }}
+  .modal-xxl { min-width: 1480px; }}
+
 
 .gradient-dark {
   height: 100%;
@@ -754,6 +776,7 @@ a {
 .mdl-snackbar {
   bottom: 10px;
   background-color: $color_tooltip;
+  color: white;
 }
 
 /*material table*/
@@ -847,16 +870,17 @@ a {
 // snackbar
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
+    font-size: 1.25rem;
     visibility: hidden; /* Hidden by default. Visible on click */
     min-width: 250px; /* Set a default minimum width */
     margin-left: -125px; /* Divide value of min-width by 2 */
-    background-color: #333; /* Black background color */
-    color: $color_tooltip;
+    background-color: $color_tooltip;
+    color: white;
     text-align: center; /* Centered text */
     border-radius: 2px; /* Rounded borders */
-    padding: 16px; /* Padding */
+    padding: 16px 32px; /* Padding */
     position: fixed; /* Sit on top of the screen */
-    z-index: 4; /* Add a z-index if needed */
+    z-index: 1051; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */
     bottom: 10px; /* 30px from the bottom */
 }
@@ -877,7 +901,6 @@ However, delay the fade out process for 2.5 seconds */
     from {bottom: 0; opacity: 0;}
     to {bottom: 10px; opacity: 1;}
 }
-
 
 
 @keyframes fadeout {

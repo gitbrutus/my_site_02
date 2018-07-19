@@ -108,7 +108,7 @@
 .card-icons-3 > .material-icons {
   color: $text_grey;
   &:hover {
-    color: $text_color;
+    color: $text_color !important;
   }
 }
 

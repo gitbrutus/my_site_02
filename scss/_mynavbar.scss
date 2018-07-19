@@ -17,7 +17,12 @@
 .mdc-top-app-bar__navigation-icon { color: $navtext_color !important; }
 
 // nav color change with JS added classes
-.nav-text-colorchange { color: $navtext_color_scroll !important; }
+.nav-text-colorchange {
+  color: $navtext_color_scroll !important;
+  &.active {
+    color: $color_main !important;
+  }
+}
 .nav-logo-colorchange { color: $text_grey !important; }
 .nav-logo-text-colorchange { color: $text_grey_light !important; }
 
@@ -57,7 +62,7 @@
 
 // nav-links --------------------
 
-
+// for topbar nav-link look at .mdc-top-app-bar__section .nav-link
 .nav-link {
   font-size: 16px;
   height: 48px;
@@ -96,6 +101,9 @@
   &:last-of-type {
     margin-right: 18px;
   }
+  &.active {
+    color: $navtext_activated_color;
+  }
   // &.active::after {
   //   height: $hover_line_width;
   //   margin-top: $hover_line_distance;
@@ -105,21 +113,23 @@
 
 
 
-// left tabs ---------------------------------
-.left-tabs .nav-link {
-  font-size: 16px;
+// MOBILE NAV ---------------------------------
+.mdc-drawer__header-content, .mdc-drawer--temporary .mdc-drawer__header-content {
+  align-items: flex-end; // flex-start //flex-end // center
+  background-color: $navbar_color;
+  color: $navtext_color;
+  font-family: $header_font;
+  font-size: 1.5rem;
   font-weight: 300;
-  /*text-transform: uppercase;*/
-  border-left: 5px solid white;
-  padding: 15px 25px;
+  text-transform: uppercase;
 }
 
-.left-tabs .nav-link:hover {
-  border-left: 5px solid #4285f4;
+.mdc-list-item .mdc-list-item__graphic {
+  margin-left: -2px !important;
+  margin-right: 30px !important;
 }
 
-.left-tabs .nav-link.active {
-  border-left: 5px solid #4285f4;
-  color: #4285f4 !important;
-  font-weight: 400 !important;
+.mdc-list-item--activated:before {
+  background-color: $color_main !important;
+  color: $color_main !important;
 }
