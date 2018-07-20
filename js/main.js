@@ -45,7 +45,7 @@ $(document).ready(function(){
     duration: 1000,   // how long it goes
     once: true,      //true=no repeat if scrolled back up
     offset: 50,       //trigger from screen bottom distance
-    // delay: 100,
+    // delay: 500, // 500 + 0.5s
     // easing: 'ease-in-out-quart',
     //'easing: 'ease-out-cubic',
   });

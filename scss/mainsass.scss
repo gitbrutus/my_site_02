@@ -186,6 +186,20 @@ a {
 
 // HEADER -------------------------------- START
 
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background: white url("http://files.mimoymima.com/images/loading.gif")
+    no-repeat center center;
+  transition: 1s 0.4s;
+}
+
+
+
 .bg {
   // background-image: url('../images/jpg/festival_v3.jpeg');
   background-repeat: no-repeat;
